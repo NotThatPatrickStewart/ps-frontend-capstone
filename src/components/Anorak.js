@@ -3,6 +3,7 @@ import { Route, Redirect } from 'react-router-dom'
 import './Anorak.css'
 import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
+import { NavBar } from './nav/NavBar'
 
 export const Anorak = () => (
     <>
@@ -11,7 +12,7 @@ export const Anorak = () => (
             if (localStorage.getItem("app_user_id")) {
                 return (
                     <>
-                        
+                        <Route render={props => <NavBar {...props} /> } />
                     </>
                 )
             } else {
