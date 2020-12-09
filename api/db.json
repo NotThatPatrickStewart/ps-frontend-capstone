@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "email": "patrick@stewart.com",
+      "password": "anorak",
+      "name": "Patrick Stewart",
+      "id": 1
+    }
+  ]
+}
