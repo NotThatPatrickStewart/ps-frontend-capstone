@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Redirect } from 'react-router-dom'
 import './Anorak.css'
+import { ApplicationViews } from './ApplicationView'
 import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
 import { NavBar } from './nav/NavBar'
@@ -13,6 +14,7 @@ export const Anorak = () => (
                 return (
                     <>
                         <Route render={props => <NavBar {...props} /> } />
+                        <Route render={props => <ApplicationViews {...props} /> } />
                     </>
                 )
             } else {
