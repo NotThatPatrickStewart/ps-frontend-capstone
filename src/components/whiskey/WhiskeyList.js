@@ -12,14 +12,26 @@ export const WhiskeyList = (props) => {
     }, [])
 
 
-    return (
+  return (
         <div className="whiskeys">
             {
-               whiskeys.map(whiskey => <Whiskey key={whiskey.id} whiskey={whiskey} />) 
+                <h1>WHISKEYS</h1>
             }
         </div>
     )
 
+
+    //RETURNS LIST OF WHISKEYS USING WHISKEY FUNCTION FROM WHISKEY.JS
+    // return (
+    //     <div className="whiskeys">
+    //         {
+    //            whiskeys.map(whiskey => <Whiskey key={whiskey.id} whiskey={whiskey} />) 
+    //         }
+    //     </div>
+    // )
+
+
+    //RETURNS LIST OF WHISKEYS FROM THIS MODULE
     // return (
     //     <div className="whiskeys">
     //         <h1>WHISKEYS</h1>
