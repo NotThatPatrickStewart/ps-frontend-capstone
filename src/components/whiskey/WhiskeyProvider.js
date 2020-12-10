@@ -4,6 +4,7 @@ export const WhiskeyContext = React.createContext();
 
 export const WhiskeyProvider = (props) => {
   const [whiskeys, setWhiskeys] = useState([]);
+  const [searchTerms, setSearchTerms] = useState("")
 
   const getWhiskeys = () => {
     return fetch("http://localhost:8089/whiskeys")
@@ -20,12 +21,16 @@ export const WhiskeyProvider = (props) => {
     }).then(getWhiskeys);
   };
 
+
+
   return (
     <WhiskeyContext.Provider
       value={{
         whiskeys,
         addWhiskey,
         getWhiskeys,
+        searchTerms,
+        setSearchTerms
       }}
     >
       {props.children}
