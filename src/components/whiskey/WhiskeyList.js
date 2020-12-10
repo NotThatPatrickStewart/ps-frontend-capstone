@@ -1,22 +1,43 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 // import { Link } from "react-router-dom";
 import { WhiskeyContext } from "./WhiskeyProvider";
 import { Whiskey } from "./Whiskey";
 import "./Whiskey.css"
 
 export const WhiskeyList = (props) => {
-    const { whiskeys, getWhiskeys } = useContext(WhiskeyContext)
+    const { whiskeys, getWhiskeys, searchTerms } = useContext(WhiskeyContext)
+    const [filteredWhiskeys, setFilteredWhiskeys] = useState([])
 
     useEffect(() => {
         getWhiskeys()
     }, [])
 
+    useEffect(() => {
+        if (searchTerms !== "") {
+
+            whiskeys.map(whiskey => {
+
+            })
+
+            const subset = whiskeys.filter(whiskey => whiskey.title.toLowerCase().includes(searchTerms.toLowerCase())) 
+            setFilteredWhiskeys(subset)
+        } else {
+            setFilteredWhiskeys([])
+        }
+    }, [searchTerms, whiskeys])
+
 
   return (
         <div className="whiskeys">
-            {
+            <>
                 <h1>WHISKEYS</h1>
-            }
+
+                {
+                    filteredWhiskeys.map(whiskey => {
+                        return <Whiskey key={whiskey.id} whiskey={whiskey} />
+                    })
+                }
+            </>
         </div>
     )
 
