@@ -6,5 +6,11 @@
       "name": "Patrick Stewart",
       "id": 1
     }
+  ],
+  "userWhiskeys": [
+    {
+      "id": 1,
+      "title": ""
+    }
   ]
 }
