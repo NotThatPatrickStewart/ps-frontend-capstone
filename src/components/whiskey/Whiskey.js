@@ -4,6 +4,17 @@ import "./Whiskey.css"
 export const Whiskey = ({ whiskey }) => (
     <section className="whiskey">
         <h3 className="whiskey__name">WHISKEY: {whiskey.title}</h3>
-        <div className="whiskey__image">{whiskey.img_url}</div>
+        {console.log("whiskey", whiskey)}
+        <img className="whiskey__image" src={whiskey.list_img_url} />
+        {
+                    whiskey.comparables.map(comparable => {
+                    return (
+                    <>
+                        <h3 className="whiskey__name">COMPARABLES: {comparable.title}</h3>
+                        <img className="whiskey__image" src={comparable.list_img_url} />
+                    </>
+                    )
+                    })
+                }
     </section>
 )
