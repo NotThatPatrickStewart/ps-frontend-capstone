@@ -23,3 +23,4 @@ export const Whiskey = ({ whiskey }) => (
                 }
     </section>
 )
+
