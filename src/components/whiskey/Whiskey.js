@@ -12,6 +12,11 @@ export const Whiskey = ({ whiskey }) => (
                     <>
                         <h3 className="whiskey__name">YOU MIGHT ALSO LIKE: {comparable.title}</h3>
                         <img className="whiskey__image" src={comparable.list_img_url} />
+                        <button onClick={() => {
+                            comparable.history.push(`/to-try/${comparable.id}`)
+                        }} >
+                            TRY
+                        </button>
                     </>
                     )
                     })
