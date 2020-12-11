@@ -15,11 +15,7 @@ export const WhiskeyList = (props) => {
     useEffect(() => {
         if (searchTerms !== "") {
 
-            whiskeys.map(whiskey => {
-
-            })
-
-            const subset = whiskeys.filter(whiskey => whiskey.title.toLowerCase().includes(searchTerms.toLowerCase())) 
+            const subset = whiskeys.filter(whiskey => whiskey.title.toLowerCase().startsWith(searchTerms.toLowerCase())) 
             setFilteredWhiskeys(subset)
         } else {
             setFilteredWhiskeys([])
