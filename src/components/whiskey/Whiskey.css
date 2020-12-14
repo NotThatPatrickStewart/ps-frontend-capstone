@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border: 1px solid goldenrod;
   }
   
   .whiskey {
@@ -9,6 +10,10 @@
       margin: 1em;
       padding: 1em;
       border: 1px solid goldenrod;
+  }
+
+  .comparable {
+    border: 1px solid goldenrod;
   }
 
   .whiskey__image {
