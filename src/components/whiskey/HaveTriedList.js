@@ -3,7 +3,7 @@ import { WhiskeyContext } from "./WhiskeyProvider"
 import "./Whiskey.css"
 import { HaveTried } from "./HaveTried"
 
-export const HaveTried = (props) => {
+export const HaveTriedList = (props) => {
     const { userWhiskeys, getUserWhiskeys } = useContext(WhiskeyContext)
 
     useEffect(() => {
