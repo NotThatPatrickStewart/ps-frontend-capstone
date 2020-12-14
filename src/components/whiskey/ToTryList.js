@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react"
 import { WhiskeyContext } from "./WhiskeyProvider"
 import "./Whiskey.css"
-import { ComparableToTry } from "./ComparablesToTry"
+import { ToTry } from "./ToTry"
 
 export const ToTryList = (props) => {
     const { userWhiskeys, getUserWhiskeys } = useContext(WhiskeyContext)
@@ -15,7 +15,7 @@ export const ToTryList = (props) => {
             <>
             <h1>WHISKEYS TO TRY</h1> 
             {
-                userWhiskeys.map(userWhiskey => <ComparableToTry key={userWhiskey.id} userWhiskey={userWhiskey} />
+                userWhiskeys.map(userWhiskey => <ToTry key={userWhiskey.id} userWhiskey={userWhiskey} />
                 )}
             </>
         </div>
