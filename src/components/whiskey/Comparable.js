@@ -11,14 +11,13 @@ export const Comparable = ({comparable}) => {
             title: comparable.title,
             whiskeyId: comparable.id,
             userId: parseInt(localStorage.getItem("app_user_id")),
-            listImgUrl: comparable.list_img_url,
+            list_img_url: comparable.list_img_url,
             notes: "",
             rating: null
         }
 
         console.log("newWhiskeyToTry", newWhiskeyToTry)
         addUserWhiskey(newWhiskeyToTry)
-        .then(() => props.history.push("/to-try"))
     }
     return (
     <div className="comparable">
