@@ -5,7 +5,7 @@ import { WhiskeyContext } from "./WhiskeyProvider";
 import { Whiskey } from "./Whiskey";
 import "./Whiskey.css"
 
-export const WhiskeyList = (props) => {
+export const WhiskeySearchList = (props) => {
     const { whiskeys, getWhiskeys, searchTerms } = useContext(WhiskeyContext)
     const [filteredWhiskeys, setFilteredWhiskeys] = useState([])
 
