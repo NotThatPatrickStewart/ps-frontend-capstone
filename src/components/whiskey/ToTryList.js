@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext, useEffect } from "react"
 import { WhiskeyContext } from "./WhiskeyProvider"
 import "./Whiskey.css"
 import { ComparableToTry } from "./ComparablesToTry"
@@ -9,10 +9,6 @@ export const ToTryList = (props) => {
     useEffect(() => {
         getUserWhiskeys()
     }, [])
-
-    // useEffect(() => {
-        
-    // })
 
     return (
         <div className="whiskeys">
