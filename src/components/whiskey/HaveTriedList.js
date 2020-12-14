@@ -10,6 +10,7 @@ export const HaveTriedList = (props) => {
         getUserWhiskeys()
     }, [])
 
+    //need if statement that returns on the conditin that userWhiskey.rating !== null
     return (
         <div className="whiskeys">
             <>
