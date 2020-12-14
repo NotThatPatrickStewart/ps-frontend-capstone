@@ -4,7 +4,7 @@ import { WhiskeyProvider } from "./whiskey/WhiskeyProvider";
 import { WhiskeySearchList } from "./whiskey/WhiskeySearchList";
 import { WhiskeySearch } from "./whiskey/WhiskeySearch";
 import { ToTryList } from "./whiskey/ToTryList";
-import { HaveTried } from "./whiskey/HaveTried";
+import { HaveTriedList } from "./whiskey/HaveTriedList";
 
 export const ApplicationViews = (props) => {
   return (
@@ -37,7 +37,7 @@ export const ApplicationViews = (props) => {
           path="/have-tried"
           render={(props) => (
             <>
-                <HaveTried {...props} />
+                <HaveTriedList {...props} />
             </>
           )}
 
