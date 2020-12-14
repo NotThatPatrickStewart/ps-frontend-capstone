@@ -5,6 +5,7 @@ export const WhiskeyContext = React.createContext();
 export const WhiskeyProvider = (props) => {
   const [whiskeys, setWhiskeys] = useState([]);
   const [searchTerms, setSearchTerms] = useState("")
+  const [userWhiskeys, setUserWhiskeys] = useState([])
 
   const getWhiskeys = () => {
     return fetch("http://localhost:8089/whiskeys")
@@ -21,7 +22,11 @@ export const WhiskeyProvider = (props) => {
     }).then(getWhiskeys);
   };
 
-
+  const getUserWhiskeys = () => {
+    return fetch("http://localhost:8088/userWhiskeys")
+    .then((response) => response.json())
+      .then(setUserWhiskeys);
+  }
 
   return (
     <WhiskeyContext.Provider
@@ -30,7 +35,9 @@ export const WhiskeyProvider = (props) => {
         addUserWhiskey,
         getWhiskeys,
         searchTerms,
-        setSearchTerms
+        setSearchTerms,
+        userWhiskeys,
+        getUserWhiskeys
       }}
     >
       {props.children}
