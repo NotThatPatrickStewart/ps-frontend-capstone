@@ -1,9 +1,9 @@
 import React from "react";
 import { Route } from "react-router-dom";
 import { WhiskeyProvider } from "./whiskey/WhiskeyProvider";
-import { WhiskeyList } from "./whiskey/WhiskeyList";
+import { WhiskeyList } from "./whiskey/WhiskeySearchList";
 import { WhiskeySearch } from "./whiskey/WhiskeySearch";
-import { ToTry } from "./whiskey/ToTry";
+import { Comparable } from "./whiskey/Comparable";
 
 export const ApplicationViews = (props) => {
   return (
@@ -25,7 +25,7 @@ export const ApplicationViews = (props) => {
           path="/to-try/:comparableId(\d+)"
           render={(props) => (
             <>
-                <ToTry {...props} />
+                <Comparable {...props} />
             </>
           )}
 
