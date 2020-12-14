@@ -11,8 +11,8 @@ export const WhiskeyProvider = (props) => {
       .then((response) => response.json())
       .then(setWhiskeys);
   };
-  const addWhiskey = (whiskey) => {
-    return fetch("http://localhost:8089/whiskeys", {
+  const addUserWhiskey = (whiskey) => {
+    return fetch("http://localhost:8088/userWhiskeys", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -27,7 +27,7 @@ export const WhiskeyProvider = (props) => {
     <WhiskeyContext.Provider
       value={{
         whiskeys,
-        addWhiskey,
+        addUserWhiskey,
         getWhiskeys,
         searchTerms,
         setSearchTerms
