@@ -1,29 +1,26 @@
 import { useContext, useEffect, useState } from "react"
 import { WhiskeyContext } from "./WhiskeyProvider"
 import "./Whiskey.css"
-import { Comparable } from "./Comparable"
+import { ComparableToTry } from "./ComparablesToTry"
 
 export const ToTryList = (props) => {
-    const { comparables, addUserWhiskey } = useContext(WhiskeyContext)
-    const [whiskeysToTry, setWhiskeysToTry] = useState([])
+    const { userWhiskeys, getUserWhiskeys } = useContext(WhiskeyContext)
 
     useEffect(() => {
-        addUserWhiskey()
+        getUserWhiskeys()
     }, [])
 
-    useEffect(() => {
-        if 
-    })
+    // useEffect(() => {
+        
+    // })
 
     return (
         <div className="whiskeys">
             <>
             <h1>WHISKEYS TO TRY</h1> 
             {
-                whiskeysToTry.map(whiskey => {
-                    return <Comparable key={comparable.id} comparable={comparable} />
-                })
-            }
+                userWhiskeys.map(userWhiskey => <ComparableToTry key={userWhiskey.id} userWhiskey={userWhiskey} />
+                )}
             </>
         </div>
     )
