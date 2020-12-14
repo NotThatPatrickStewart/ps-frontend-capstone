@@ -36,24 +36,6 @@
       "id": 3
     },
     {
-      "title": "Singleton of Glendullan 12",
-      "whiskeyId": 450,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683106/lhs1hrzk5jblsimlnrdm.jpg",
-      "notes": "",
-      "rating": null,
-      "id": 4
-    },
-    {
-      "title": "Singleton of Glendullan 12",
-      "whiskeyId": 450,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683106/lhs1hrzk5jblsimlnrdm.jpg",
-      "notes": "",
-      "rating": null,
-      "id": 5
-    },
-    {
       "title": "Balvenie 12 Single Barrel First Fill",
       "whiskeyId": 81,
       "userId": 1,
@@ -79,15 +61,6 @@
       "notes": "",
       "rating": null,
       "id": 8
-    },
-    {
-      "title": "Glenfiddich Snow Phoenix",
-      "whiskeyId": 261,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682973/pdutjwxymclaezs2h9lw.jpg",
-      "notes": "",
-      "rating": null,
-      "id": 9
     },
     {
       "title": "Glenfiddich Snow Phoenix",
