@@ -13,6 +13,16 @@
   }
 
   .comparable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid goldenrod;
+  }
+
+  .userWhiskeys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     border: 1px solid goldenrod;
   }
 
