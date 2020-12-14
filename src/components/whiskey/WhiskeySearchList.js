@@ -6,20 +6,27 @@ import { Whiskey } from "./Whiskey";
 import "./Whiskey.css"
 
 export const WhiskeySearchList = (props) => {
-    const { whiskeys, getWhiskeys, searchTerms } = useContext(WhiskeyContext)
+    const { whiskeys, getWhiskeys, searchTerms, userWhiskeys } = useContext(WhiskeyContext)
     const [filteredWhiskeys, setFilteredWhiskeys] = useState([])
     
-    // const [newWhiskeys, setNewWhiskeys] = useState([]) Could use this, then filter through this online 21, then use splice to find the index of this whiskey and remove it
-
     useEffect(() => {
         getWhiskeys()
     }, [])
 
     useEffect(() => {
-        if (searchTerms !== "") { //&& whiskey.comparable.id !== userWhiskey.whiskeyId - can I use this logic here and get it to know that I'm referenceing keys from both APIs?
-
-            const subset = whiskeys.filter(whiskey => whiskey.title.toLowerCase().startsWith(searchTerms.toLowerCase())) 
-            setFilteredWhiskeys(subset)
+        if (searchTerms !== "") { 
+            const searchedWhiskeys = whiskeys.filter(whiskey => whiskey.title.toLowerCase().startsWith(searchTerms.toLowerCase()))
+            let subset = []
+            searchedWhiskeys.map(whiskey => {
+                console.log("whiskey", whiskey)
+                whiskey.comparables.map(comparable => {
+                    console.log("comparable", comparable)
+                    if (!userWhiskeys.find(userWhiskey => parseInt(comparable.id) === parseInt(userWhiskey.whiskeyId))) {
+                        subset.push(whiskey)
+                    }})
+                })
+                console.log("subset", subset)
+                setFilteredWhiskeys(subset)
         } else {
             setFilteredWhiskeys([])
         }
