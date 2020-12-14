@@ -1,19 +1,22 @@
+
 import React, { useContext, useEffect, useState } from "react";
 // import { Link } from "react-router-dom";
 import { WhiskeyContext } from "./WhiskeyProvider";
 import { Whiskey } from "./Whiskey";
 import "./Whiskey.css"
 
-export const WhiskeyList = (props) => {
+export const WhiskeySearchList = (props) => {
     const { whiskeys, getWhiskeys, searchTerms } = useContext(WhiskeyContext)
     const [filteredWhiskeys, setFilteredWhiskeys] = useState([])
+    
+    // const [newWhiskeys, setNewWhiskeys] = useState([]) Could use this, then filter through this online 21, then use splice to find the index of this whiskey and remove it
 
     useEffect(() => {
         getWhiskeys()
     }, [])
 
     useEffect(() => {
-        if (searchTerms !== "") {
+        if (searchTerms !== "") { //&& whiskey.comparable.id !== userWhiskey.whiskeyId - can I use this logic here and get it to know that I'm referenceing keys from both APIs?
 
             const subset = whiskeys.filter(whiskey => whiskey.title.toLowerCase().startsWith(searchTerms.toLowerCase())) 
             setFilteredWhiskeys(subset)
