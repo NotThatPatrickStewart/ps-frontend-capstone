@@ -9,40 +9,26 @@
   ],
   "userWhiskeys": [
     {
-      "id": 1,
-      "title": "Aberlour A'bunadh batch #40",
-      "whiskeyId": 29,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
-      "notes": "",
-      "rating": 75
-    },
-    {
-      "title": "Benrinnes 23",
-      "whiskeyId": 104,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682873/mteusovrci14kr2kjgbf.jpg",
-      "notes": "",
-      "rating": null,
-      "id": 2
-    },
-    {
-      "title": "Singleton of Glendullan 12",
-      "whiskeyId": 450,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683106/lhs1hrzk5jblsimlnrdm.jpg",
-      "notes": "",
-      "rating": null,
-      "id": 3
-    },
-    {
       "title": "Balvenie 12 Single Barrel First Fill",
       "whiskeyId": 81,
       "userId": 1,
       "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683167/fmo34werodtwq8hdjnha.jpg",
       "notes": "",
+      "rating": 66,
+      "region": "Speyside",
+      "price": 67,
+      "id": 1
+    },
+    {
+      "title": "Colonel E.H. Taylor Single Barrel",
+      "whiskeyId": 169,
+      "userId": 1,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682921/ntbk8b97djwrh6nkxyev.jpg",
+      "notes": "",
       "rating": null,
-      "id": 6
+      "region": "Bourbon",
+      "price": 61,
+      "id": 2
     },
     {
       "title": "Jack Daniel's Single Barrel",
@@ -50,17 +36,10 @@
       "userId": 1,
       "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683011/mxslvon38ir8zyhx9m3q.jpg",
       "notes": "",
-      "rating": null,
-      "id": 7
-    },
-    {
-      "title": "Old Pulteney 1990",
-      "whiskeyId": 420,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683084/zgsuxxkq3boybzfna1eq.jpg",
-      "notes": "",
       "rating": 42,
-      "id": 8
+      "region": "American",
+      "price": 36,
+      "id": 3
     },
     {
       "title": "Glenfiddich Snow Phoenix",
@@ -69,7 +48,31 @@
       "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682973/pdutjwxymclaezs2h9lw.jpg",
       "notes": "",
       "rating": null,
-      "id": 10
+      "region": "Speyside",
+      "price": 116,
+      "id": 4
+    },
+    {
+      "title": "Compass Box Great King St. Artist's Blend",
+      "whiskeyId": 174,
+      "userId": 1,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682925/loegxoq4lacbk8btgkon.jpg",
+      "notes": "",
+      "rating": 99,
+      "region": "Other",
+      "price": 31,
+      "id": 5
+    },
+    {
+      "title": "Old Pulteney 1990",
+      "whiskeyId": 420,
+      "userId": 1,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683084/zgsuxxkq3boybzfna1eq.jpg",
+      "notes": "",
+      "rating": null,
+      "region": "Highland",
+      "price": 128,
+      "id": 6
     }
   ]
 }
