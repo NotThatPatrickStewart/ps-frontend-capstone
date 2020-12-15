@@ -34,6 +34,17 @@ export const WhiskeyProvider = (props) => {
       .then(setUserWhiskeys);
   }
 
+  const updateUserWhiskey = userWhiskey => {
+    return fetch (`http://localhost:8088/userWhiskeys/${userWhiskey.id}`, {
+      method: "PUT",
+      headers: {
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify(userWhiskey)
+    })
+      .then(getUserWhiskeys)
+  }
+
   return (
     <WhiskeyContext.Provider
       value={{
@@ -44,7 +55,8 @@ export const WhiskeyProvider = (props) => {
         setSearchTerms,
         userWhiskeys,
         getUserWhiskeys,
-        getUserWhiskeyById
+        getUserWhiskeyById,
+        updateUserWhiskey
       }}
     >
       {props.children}
