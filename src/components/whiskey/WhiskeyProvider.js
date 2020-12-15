@@ -15,6 +15,7 @@ export const WhiskeyProvider = (props) => {
 
   const getUserWhiskeyById = (id) => {
     return fetch(`http://localhost:8088/userWhiskeys/${id}`)
+    .then((response) => response.json())
   }
 
   const addUserWhiskey = (whiskey) => {
