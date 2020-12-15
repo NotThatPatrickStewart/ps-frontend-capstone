@@ -12,6 +12,11 @@ export const WhiskeyProvider = (props) => {
       .then((response) => response.json())
       .then(setWhiskeys);
   };
+
+  const getUserWhiskeyById = (id) => {
+    return fetch(`http://localhost:8088/userWhiskeys/${id}`)
+  }
+
   const addUserWhiskey = (whiskey) => {
     return fetch("http://localhost:8088/userWhiskeys", {
       method: "POST",
@@ -37,7 +42,8 @@ export const WhiskeyProvider = (props) => {
         searchTerms,
         setSearchTerms,
         userWhiskeys,
-        getUserWhiskeys
+        getUserWhiskeys,
+        getUserWhiskeyById
       }}
     >
       {props.children}
