@@ -5,7 +5,8 @@ import { WhiskeySearchList } from "./whiskey/WhiskeySearchList";
 import { WhiskeySearch } from "./whiskey/WhiskeySearch";
 import { ToTryList } from "./whiskey/ToTryList";
 import { HaveTriedList } from "./whiskey/HaveTriedList";
-import { UserWhiskeyDetail } from "./whiskey/WhiskeyDetail";
+import { UserWhiskeyDetail } from "./whiskey/UserWhiskeyDetail";
+import { UserWhiskeyForm } from "./whiskey/UserWhiskeyForm";
 
 export const ApplicationViews = (props) => {
   return (
@@ -47,6 +48,16 @@ export const ApplicationViews = (props) => {
           render={(props) => (
             <>
               <UserWhiskeyDetail {...props} />
+            </>
+          )}
+        />
+
+        <Route
+          exact
+          path="/userWhiskeys/edit/:userWhiskeyId(\d+)"
+          render={(props) => (
+            <>
+              <UserWhiskeyForm {...props} />
             </>
           )}
         />
