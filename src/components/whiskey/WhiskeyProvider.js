@@ -36,7 +36,7 @@ export const WhiskeyProvider = (props) => {
 
   const updateUserWhiskey = userWhiskey => {
     return fetch (`http://localhost:8088/userWhiskeys/${userWhiskey.id}`, {
-      method: "PUT",
+      method: "PATCH",
       headers: {
           "Content-Type": "application/json"
       },
