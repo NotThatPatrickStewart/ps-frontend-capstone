@@ -11,10 +11,12 @@ export const UserWhiskeyDetail = (props) => {
     getUserWhiskeyById(userWhiskeyId).then(setUserWhiskey);
   }, []);
 
+console.log(userWhiskey)
+
   return (
     <>
       <section className="userWhiskeyDetail">
-        <h3 className="userWhiskey__name">{userWhiskey.name}</h3>
+        <h3 className="userWhiskey__name">{userWhiskey.title}</h3>
         <img className="userWhiskey__image" src={userWhiskey.list_img_url} />
         <div className="userWhiskey__region">REGION: {userWhiskey.region}</div>
         <div className="userWhiskey__notes">${userWhiskey.notes}</div>
