@@ -5,6 +5,7 @@ import { WhiskeySearchList } from "./whiskey/WhiskeySearchList";
 import { WhiskeySearch } from "./whiskey/WhiskeySearch";
 import { ToTryList } from "./whiskey/ToTryList";
 import { HaveTriedList } from "./whiskey/HaveTriedList";
+import { UserWhiskeyDetail } from "./whiskey/WhiskeyDetail";
 
 export const ApplicationViews = (props) => {
   return (
@@ -15,21 +16,19 @@ export const ApplicationViews = (props) => {
           path="/search"
           render={(props) => (
             <>
-                <WhiskeySearch />
-                <WhiskeySearchList {...props} />
+              <WhiskeySearch />
+              <WhiskeySearchList {...props} />
             </>
           )}
-
         />
         <Route
           exact
           path="/to-try"
           render={(props) => (
             <>
-                <ToTryList {...props} />
+              <ToTryList {...props} />
             </>
           )}
-
         />
 
         <Route
@@ -37,10 +36,19 @@ export const ApplicationViews = (props) => {
           path="/have-tried"
           render={(props) => (
             <>
-                <HaveTriedList {...props} />
+              <HaveTriedList {...props} />
             </>
           )}
+        />
 
+        <Route
+          exact
+          path="/userWhiskeys/:userWhiskeyId(\d+)"
+          render={(props) => (
+            <>
+              <UserWhiskeyDetail {...props} />
+            </>
+          )}
         />
       </WhiskeyProvider>
     </>
