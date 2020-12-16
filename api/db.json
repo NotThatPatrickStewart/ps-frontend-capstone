@@ -9,66 +9,91 @@
   ],
   "userWhiskeys": [
     {
-      "id": 1,
-      "title": "Aberlour A'bunadh batch #40",
-      "whiskeyId": 29,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
-      "notes": "",
-      "rating": 75
-    },
-    {
-      "title": "Benrinnes 23",
-      "whiskeyId": 104,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682873/mteusovrci14kr2kjgbf.jpg",
-      "notes": "",
-      "rating": null,
-      "id": 2
-    },
-    {
-      "title": "Singleton of Glendullan 12",
-      "whiskeyId": 450,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683106/lhs1hrzk5jblsimlnrdm.jpg",
-      "notes": "",
-      "rating": null,
-      "id": 3
-    },
-    {
       "title": "Balvenie 12 Single Barrel First Fill",
       "whiskeyId": 81,
       "userId": 1,
       "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683167/fmo34werodtwq8hdjnha.jpg",
       "notes": "",
+      "rating": 66,
+      "region": "Speyside",
+      "price": 67,
+      "id": 1
+    },
+    {
+      "title": "Colonel E.H. Taylor Single Barrel",
+      "whiskeyId": 169,
+      "userId": 1,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682921/ntbk8b97djwrh6nkxyev.jpg",
+      "notes": "",
       "rating": null,
-      "id": 6
+      "region": "Bourbon",
+      "price": 61,
+      "id": 2
     },
     {
       "title": "Jack Daniel's Single Barrel",
       "whiskeyId": 316,
       "userId": 1,
       "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683011/mxslvon38ir8zyhx9m3q.jpg",
-      "notes": "",
-      "rating": null,
-      "id": 7
+      "notes": "An extremely adequate whiskey",
+      "rating": 42,
+      "region": "American",
+      "price": 36,
+      "id": 3
     },
     {
       "title": "Old Pulteney 1990",
       "whiskeyId": 420,
       "userId": 1,
       "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683084/zgsuxxkq3boybzfna1eq.jpg",
+      "notes": "scrumptious",
+      "rating": 88,
+      "region": "Highland",
+      "price": 128,
+      "id": 6
+    },
+    {
+      "title": "Aberlour 12 Non Chill Filtered",
+      "whiskeyId": 22,
+      "userId": 1,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+      "notes": "WOOT",
+      "rating": 90,
+      "region": "Speyside",
+      "price": 54,
+      "id": 7
+    },
+    {
+      "title": "Ardbeg Galileo",
+      "whiskeyId": 57,
+      "userId": 1,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683150/d6ulyqvhgwvwxvpgifd9.jpg",
       "notes": "",
-      "rating": 42,
+      "rating": 24,
+      "region": "Islay",
+      "price": 102,
       "id": 8
     },
     {
-      "title": "Glenfiddich Snow Phoenix",
-      "whiskeyId": 261,
+      "title": "Macallan 12 Fine Oak",
+      "whiskeyId": 383,
       "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682973/pdutjwxymclaezs2h9lw.jpg",
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683057/bywpygjnzic9zftabobp.jpg",
       "notes": "",
       "rating": null,
+      "region": "Speyside",
+      "price": 64,
+      "id": 9
+    },
+    {
+      "title": "Hakushu 12",
+      "whiskeyId": 290,
+      "userId": 1,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+      "notes": "",
+      "rating": null,
+      "region": "Japan",
+      "price": 64,
       "id": 10
     }
   ]

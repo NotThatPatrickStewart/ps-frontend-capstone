@@ -10,7 +10,6 @@ export const HaveTriedList = (props) => {
     getUserWhiskeys();
   }, []);
 
-  // if (userWhiskey.rating !== null) {}
   return (
     <div className="whiskeys">
       <>

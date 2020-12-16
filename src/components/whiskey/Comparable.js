@@ -13,7 +13,9 @@ export const Comparable = ({comparable}) => {
             userId: parseInt(localStorage.getItem("app_user_id")),
             list_img_url: comparable.list_img_url,
             notes: "",
-            rating: null
+            rating: null,
+            region: comparable.region,
+            price: comparable.price
         }
 
         console.log("newWhiskeyToTry", newWhiskeyToTry)
@@ -25,6 +27,9 @@ export const Comparable = ({comparable}) => {
       {comparable.title}
       </h3>
       <img className="whiskey__image" src={comparable.list_img_url} />
+      <div className="whiskey__region">REGION: {comparable.region}</div>
+    <div className="whiskey__price">${comparable.price}</div>
+    {/* <div className="whiskey__tags">{comparable.tags.title}</div> */}
       <button onClick = {addWhiskeyToTry} > ADD TO TRY LIST</button>
     </div>
   );

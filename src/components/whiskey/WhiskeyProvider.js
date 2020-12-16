@@ -12,6 +12,12 @@ export const WhiskeyProvider = (props) => {
       .then((response) => response.json())
       .then(setWhiskeys);
   };
+
+  const getUserWhiskeyById = (id) => {
+    return fetch(`http://localhost:8088/userWhiskeys/${id}`)
+    .then((response) => response.json())
+  }
+
   const addUserWhiskey = (whiskey) => {
     return fetch("http://localhost:8088/userWhiskeys", {
       method: "POST",
@@ -28,6 +34,24 @@ export const WhiskeyProvider = (props) => {
       .then(setUserWhiskeys);
   }
 
+  const updateUserWhiskey = (whiskeyId, updateWhiskey) => {
+    return fetch (`http://localhost:8088/userWhiskeys/${whiskeyId}`, {
+      method: "PATCH",
+      headers: {
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify(updateWhiskey)
+    })
+      .then(getUserWhiskeys)
+  }
+
+  const deleteWhiskey = whiskeyId => {
+    return fetch(`http://localhost:8088/userWhiskeys/${whiskeyId}`, {
+        method: "DELETE"
+    })
+        .then(getUserWhiskeys)
+}
+
   return (
     <WhiskeyContext.Provider
       value={{
@@ -37,7 +61,10 @@ export const WhiskeyProvider = (props) => {
         searchTerms,
         setSearchTerms,
         userWhiskeys,
-        getUserWhiskeys
+        getUserWhiskeys,
+        getUserWhiskeyById,
+        updateUserWhiskey,
+        deleteWhiskey
       }}
     >
       {props.children}
