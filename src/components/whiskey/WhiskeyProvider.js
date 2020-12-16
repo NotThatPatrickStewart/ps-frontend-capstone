@@ -34,16 +34,23 @@ export const WhiskeyProvider = (props) => {
       .then(setUserWhiskeys);
   }
 
-  const updateUserWhiskey = userWhiskey => {
-    return fetch (`http://localhost:8088/userWhiskeys/${userWhiskey.id}`, {
+  const updateUserWhiskey = (whiskeyId, updateWhiskey) => {
+    return fetch (`http://localhost:8088/userWhiskeys/${whiskeyId}`, {
       method: "PATCH",
       headers: {
           "Content-Type": "application/json"
       },
-      body: JSON.stringify(userWhiskey)
+      body: JSON.stringify(updateWhiskey)
     })
       .then(getUserWhiskeys)
   }
+
+  const deleteWhiskey = whiskeyId => {
+    return fetch(`http://localhost:8088/userWhiskeys/${whiskeyId}`, {
+        method: "DELETE"
+    })
+        .then(getUserWhiskeys)
+}
 
   return (
     <WhiskeyContext.Provider
@@ -56,7 +63,8 @@ export const WhiskeyProvider = (props) => {
         userWhiskeys,
         getUserWhiskeys,
         getUserWhiskeyById,
-        updateUserWhiskey
+        updateUserWhiskey,
+        deleteWhiskey
       }}
     >
       {props.children}
