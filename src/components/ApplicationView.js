@@ -5,8 +5,10 @@ import { WhiskeySearchList } from "./whiskey/WhiskeySearchList";
 import { WhiskeySearch } from "./whiskey/WhiskeySearch";
 import { ToTryList } from "./whiskey/ToTryList";
 import { HaveTriedList } from "./whiskey/HaveTriedList";
-import { UserWhiskeyDetail } from "./whiskey/UserWhiskeyDetail";
-import { UserWhiskeyForm } from "./whiskey/UserWhiskeyForm";
+import { HaveTriedUserWhiskeyDetail } from "./whiskey/HaveTriedUserWhiskeyDetail";
+import { HaveTriedUserWhiskeyForm } from "./whiskey/HaveTriedUserWhiskeyForm";
+import { ToTryUserWhiskeyDetail } from "./whiskey/ToTryUserWhiskeyDetail";
+import { ToTryUserWhiskeyForm } from "./whiskey/ToTryUserWhiskeyForm";
 
 export const ApplicationViews = (props) => {
   return (
@@ -44,20 +46,40 @@ export const ApplicationViews = (props) => {
 
         <Route
           exact
-          path="/userWhiskeys/:userWhiskeyId(\d+)"
+          path="/have-tried-userWhiskeys/:userWhiskeyId(\d+)"
           render={(props) => (
             <>
-              <UserWhiskeyDetail {...props} />
+              <HaveTriedUserWhiskeyDetail {...props} />
             </>
           )}
         />
 
         <Route
           exact
-          path="/userWhiskeys/edit/:userWhiskeyId(\d+)"
+          path="/have-tried-userWhiskeys/edit/:userWhiskeyId(\d+)"
           render={(props) => (
             <>
-              <UserWhiskeyForm {...props} />
+              <HaveTriedUserWhiskeyForm {...props} />
+            </>
+          )}
+        />
+
+        <Route
+          exact
+          path="/to-try-userWhiskeys/:userWhiskeyId(\d+)"
+          render={(props) => (
+            <>
+              <ToTryUserWhiskeyDetail {...props} />
+            </>
+          )}
+        />
+
+        <Route
+          exact
+          path="/to-try-userWhiskeys/edit/:userWhiskeyId(\d+)"
+          render={(props) => (
+            <>
+              <ToTryUserWhiskeyForm {...props} />
             </>
           )}
         />
