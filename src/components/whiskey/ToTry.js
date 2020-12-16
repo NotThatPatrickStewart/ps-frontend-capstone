@@ -6,7 +6,7 @@ export const ToTry = ({ userWhiskey }) => {
   return (
     <div className="userWhiskeys">
       <h3 className="whiskey__name">
-        <Link to={`/userWhiskeys/${userWhiskey.id}`}>{userWhiskey.title}</Link>
+        <Link to={`/to-try-userWhiskeys/${userWhiskey.id}`}>{userWhiskey.title}</Link>
       </h3>
       <img className="whiskey__image" src={userWhiskey.list_img_url} />
       <div className="whiskey>>rating">{userWhiskey.rating}</div>
