@@ -5,22 +5,25 @@ import { HaveTried } from "./HaveTried";
 
 export const HaveTriedList = (props) => {
   const { userWhiskeys, getUserWhiskeys } = useContext(WhiskeyContext);
+  const user = parseInt(localStorage.getItem("app_user_id"))
+
 
   useEffect(() => {
     getUserWhiskeys();
   }, []);
 
+  if (localStorage.getItem("app_user_id")) {
   return (
     <div className="whiskeys">
       <>
         <h1>WHISKEYS I'VE TRIED</h1>
         <h4>click on a whiskey to see more info</h4>
         {userWhiskeys.map((userWhiskey) => {
-          if (userWhiskey.rating !== null) {
+          if (userWhiskey.rating !== null && userWhiskey.userId === user) {
             return <HaveTried key={userWhiskey.id} userWhiskey={userWhiskey} />;
           }
         })}
       </>
     </div>
-  );
+  )};
 };

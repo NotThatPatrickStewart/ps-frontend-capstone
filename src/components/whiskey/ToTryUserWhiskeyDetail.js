@@ -29,7 +29,7 @@ console.log(userWhiskey)
             () => {
                 props.history.push(`/to-try-userWhiskeys/edit/${userWhiskey.id}`)
             }}>
-                ADD NOTES
+                ADD RATING
             </button>
             <button onClick={
                     () => {
@@ -39,7 +39,7 @@ console.log(userWhiskey)
                         })
                     }
                 }>REMOVE WHISKEY</button>
-            <button onClick={() => history.goBack()}>Back</button>
+            <button onClick={() => history.goBack()}>BACK</button>
       </section>
     </>
   );

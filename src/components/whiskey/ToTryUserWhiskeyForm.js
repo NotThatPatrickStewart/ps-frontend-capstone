@@ -30,7 +30,7 @@ export const ToTryUserWhiskeyForm = (props) => {
             required
             autoFocus
             className="form-control"
-            placeholder="whiskey notes"
+            placeholder="optional"
           />
         </div>
       </fieldset>
@@ -44,7 +44,7 @@ export const ToTryUserWhiskeyForm = (props) => {
             required
             autoFocus
             className="form-control"
-            placeholder="whiskey rating"
+            placeholder="add rating "
           />
         </div>
       </fieldset>
@@ -56,9 +56,9 @@ export const ToTryUserWhiskeyForm = (props) => {
         }}
         className="btn btn-primary"
       >
-        SAVE NOTE
+        SAVE
       </button>
-      <button onClick={() => history.goBack()}>Back</button>
+      <button onClick={() => history.goBack()}>BACK</button>
     </form>
   );
 };
