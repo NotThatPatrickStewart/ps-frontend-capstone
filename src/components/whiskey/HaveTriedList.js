@@ -10,7 +10,7 @@ export const HaveTriedList = (props) => {
 
   useEffect(() => {
     getUserWhiskeys();
-  }, []);
+  });
 
   if (localStorage.getItem("app_user_id")) {
   return (
@@ -21,6 +21,8 @@ export const HaveTriedList = (props) => {
         {userWhiskeys.map((userWhiskey) => {
           if (userWhiskey.rating !== null && userWhiskey.userId === user) {
             return <HaveTried key={userWhiskey.id} userWhiskey={userWhiskey} />;
+          } else {
+            return ""
           }
         })}
       </>
