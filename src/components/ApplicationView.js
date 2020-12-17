@@ -16,7 +16,7 @@ export const ApplicationViews = (props) => {
       <WhiskeyProvider>
         <Route
           exact
-          path="/search"
+          path="/"
           render={(props) => (
             <>
               <WhiskeySearch />

@@ -42,9 +42,9 @@ export const HaveTriedUserWhiskeyForm = (props) => {
         }}
         className="btn btn-primary"
       >
-        SAVE NOTE
+        SAVE
       </button>
-      <button onClick={() => history.goBack()}>Back</button>
+      <button onClick={() => history.goBack()}>BACK</button>
     </form>
   );
 };

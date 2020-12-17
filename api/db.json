@@ -5,118 +5,32 @@
       "password": "anorak",
       "name": "Patrick Stewart",
       "id": 1
+    },
+    {
+      "email": "nopunin@10did.com",
+      "password": "puns",
+      "name": "Bryan Punmaster",
+      "id": 2
     }
   ],
   "userWhiskeys": [
     {
-      "title": "Balvenie 12 Single Barrel First Fill",
-      "whiskeyId": 81,
+      "title": "Aberlour A'bunadh batch #36",
+      "whiskeyId": 27,
       "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683167/fmo34werodtwq8hdjnha.jpg",
-      "notes": "",
-      "rating": 66,
-      "region": "Speyside",
-      "price": 67,
-      "id": 1
-    },
-    {
-      "title": "Colonel E.H. Taylor Single Barrel",
-      "whiskeyId": 169,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682921/ntbk8b97djwrh6nkxyev.jpg",
-      "notes": "",
-      "rating": null,
-      "region": "Bourbon",
-      "price": 61,
-      "id": 2
-    },
-    {
-      "title": "Jack Daniel's Single Barrel",
-      "whiskeyId": 316,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683011/mxslvon38ir8zyhx9m3q.jpg",
-      "notes": "An extremely adequate whiskey",
-      "rating": 42,
-      "region": "American",
-      "price": 36,
-      "id": 3
-    },
-    {
-      "title": "Old Pulteney 1990",
-      "whiskeyId": 420,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683084/zgsuxxkq3boybzfna1eq.jpg",
-      "notes": "scrumptious",
-      "rating": 88,
-      "region": "Highland",
-      "price": 128,
-      "id": 6
-    },
-    {
-      "title": "Aberlour 12 Non Chill Filtered",
-      "whiskeyId": 22,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
-      "notes": "WOOT",
-      "rating": 90,
-      "region": "Speyside",
-      "price": 54,
-      "id": 7
-    },
-    {
-      "title": "Macallan 12 Fine Oak",
-      "whiskeyId": 383,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683057/bywpygjnzic9zftabobp.jpg",
-      "notes": "",
-      "rating": null,
-      "region": "Speyside",
-      "price": 64,
-      "id": 9
-    },
-    {
-      "title": "Hakushu 12",
-      "whiskeyId": 290,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
-      "notes": "",
-      "rating": null,
-      "region": "Japan",
-      "price": 64,
-      "id": 10
-    },
-    {
-      "title": "Aberlour A'bunadh batch #40",
-      "whiskeyId": 29,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
-      "notes": "",
-      "rating": null,
-      "region": "Speyside",
-      "price": 64,
-      "id": 16
-    },
-    {
-      "title": "Clynelish 14",
-      "whiskeyId": 167,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682919/lyqop9qxbihpgkm870eg.jpg",
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682979/przkj3phtkchoyozalzj.jpg",
       "notes": "",
       "rating": 50,
-      "region": "Highland",
-      "price": 51,
-      "id": 18
+      "id": 24
     },
     {
-      "title": "Springbank 10 100 Proof",
-      "whiskeyId": 457,
+      "title": "Aberlour A'bunadh batch #36",
+      "whiskeyId": 27,
       "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683109/kte8telvtiv9k5w9980v.jpg",
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682979/przkj3phtkchoyozalzj.jpg",
       "notes": "",
       "rating": null,
-      "region": "Campbeltown",
-      "price": 68,
-      "id": 19
+      "id": 25
     }
   ]
 }

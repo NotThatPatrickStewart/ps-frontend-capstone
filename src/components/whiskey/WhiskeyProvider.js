@@ -12,6 +12,11 @@ export const WhiskeyProvider = (props) => {
       .then((response) => response.json())
       .then(setWhiskeys);
   };
+  
+  const getWhiskeyById = (id) => {
+    return fetch(`http://localhost:8089/whiskeys/${id}`)
+    .then((response) => response.json())
+  }
 
   const getUserWhiskeyById = (id) => {
     return fetch(`http://localhost:8088/userWhiskeys/${id}`)
@@ -64,7 +69,8 @@ export const WhiskeyProvider = (props) => {
         getUserWhiskeys,
         getUserWhiskeyById,
         updateUserWhiskey,
-        deleteWhiskey
+        deleteWhiskey,
+        getWhiskeyById
       }}
     >
       {props.children}
