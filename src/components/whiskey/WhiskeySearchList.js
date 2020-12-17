@@ -4,7 +4,7 @@ import { Whiskey } from "./Whiskey";
 import "./Whiskey.css";
 
 export const WhiskeySearchList = (props) => {
-  const { whiskeys, getWhiskeys, searchTerms, userWhiskeys } = useContext(
+  const { whiskeys, getWhiskeys, searchTerms } = useContext(
     WhiskeyContext
   );
   const [filteredWhiskeys, setFilteredWhiskeys] = useState([]);
@@ -28,6 +28,7 @@ export const WhiskeySearchList = (props) => {
     }
   }, [searchTerms, whiskeys]);
 
+//   ***THIS CODE WILL BE IMPLEMENTED LATER***
 //   useEffect(() => {
 //     if (searchTerms !== "") {
 //       const searchedWhiskeys = whiskeys.filter((whiskey) =>
@@ -54,6 +55,7 @@ export const WhiskeySearchList = (props) => {
 //       setFilteredWhiskeys([]);
 //     }
 //   }, [searchTerms, whiskeys]);
+// ******************************************
 
   return (
     <div className="whiskeys">
