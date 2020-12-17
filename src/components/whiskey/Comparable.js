@@ -13,9 +13,7 @@ export const Comparable = ({comparable}) => {
             userId: parseInt(localStorage.getItem("app_user_id")),
             list_img_url: comparable.list_img_url,
             notes: "",
-            rating: null,
-            region: comparable.region,
-            price: comparable.price
+            rating: null
         }
 
         console.log("newWhiskeyToTry", newWhiskeyToTry)
