@@ -11,7 +11,7 @@ export const Whiskey = ({ whiskey }) => (
     <div className="whiskey__price">${whiskey.price}</div>
     {/* <div className="whiskey__tags">{whiskey.tags.title}</div> */}
     <h3>THEN TRY ONE OF THESE:</h3>
-    {whiskey.comparables.map((comparable) => <Comparable key={comparable.id} comparable={comparable} />
+    {whiskey.comparables.map((comparable) => <Comparable key={comparable.id} comparable={comparable} /> //add.filter before .map to check if the comparable id exists in array of user whiskeys as userWhiskey.whiskeyId, so this componenet needs logic to do that, not needed in WhiskeySearchList
     )}
   </section>
 );
