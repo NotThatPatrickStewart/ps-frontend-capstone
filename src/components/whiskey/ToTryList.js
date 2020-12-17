@@ -9,7 +9,7 @@ export const ToTryList = (props) => {
 
   useEffect(() => {
     getUserWhiskeys()
-  }, []);
+  });
 
   return (
     <div className="whiskeys">
@@ -20,6 +20,8 @@ export const ToTryList = (props) => {
         {userWhiskeys.map((userWhiskey) => {
           if (userWhiskey.rating === null && userWhiskey.userId === user) {
             return <ToTry key={userWhiskey.id} userWhiskey={userWhiskey} />;
+          } else {
+            return ""
           }
         })}
       </>

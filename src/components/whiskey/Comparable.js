@@ -16,7 +16,6 @@ export const Comparable = ({comparable}) => {
             rating: null
         }
 
-        console.log("newWhiskeyToTry", newWhiskeyToTry)
         addUserWhiskey(newWhiskeyToTry)
     }
 
@@ -25,7 +24,7 @@ export const Comparable = ({comparable}) => {
       <h3 className="whiskey__name">
       {comparable.title}
       </h3>
-      <img className="whiskey__image" src={comparable.list_img_url} />
+      <img className="whiskey__image" src={comparable.list_img_url} alt="whiskey bottle" />
       <div className="whiskey__region">REGION: {comparable.region}</div>
     <div className="whiskey__price">${comparable.price}</div>
     {/* <div className="whiskey__tags">{comparable.tags.title}</div> */}

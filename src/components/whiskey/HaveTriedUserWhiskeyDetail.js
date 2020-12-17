@@ -13,28 +13,23 @@ export const HaveTriedUserWhiskeyDetail = (props) => {
   useEffect(() => {
     const userWhiskeyId = parseInt(props.match.params.userWhiskeyId);
     getUserWhiskeyById(userWhiskeyId).then(setUserWhiskey);
-  }, []);
+  }, [props.match.params.userWhiskeyId, getUserWhiskeyById]);
 
   useEffect(() => {
-    if (userWhiskey.id !== undefined) { //added conditional, this removed the first fetch call error 404 not found where id returned as NaN
+    if (userWhiskey.id !== undefined) {
     const whiskeyId = parseInt(userWhiskey.whiskeyId);
     getWhiskeyById(whiskeyId)
     .then(w => {
-     console.log("w", w) 
      setWhiskey(w)
     }
     )};
-    // console.log("whiskeyId", whiskeyId) //this concolse log breaks everything
-  }, [userWhiskey]); //removed userWhiskey from array base state, this removed the second fetch call error 404 not found where id returned as an integer
-
-console.log("userWhiskey", userWhiskey)
- console.log("whiskey", whiskey) //this console log returns an empty object
+  }, [userWhiskey, getWhiskeyById]);
 
   return (
     <>
       <section className="userWhiskeyDetail">
         <h3 className="userWhiskey__name">{userWhiskey.title}</h3>
-        <img className="userWhiskey__image" src={userWhiskey.list_img_url} />
+        <img className="userWhiskey__image" src={userWhiskey.list_img_url} alt="whiskey bottle" />
         <div className="whiskey__rating">RATING: {userWhiskey.rating}</div>
         <div className="whiskey__region">REGION: {whiskey.region}</div>
         <div className="whiskey__region">${whiskey.price}</div>
