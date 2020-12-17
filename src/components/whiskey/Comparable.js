@@ -5,7 +5,7 @@ import { WhiskeyContext } from "./WhiskeyProvider";
 export const Comparable = ({comparable}) => {
 
     const { addUserWhiskey } = useContext(WhiskeyContext)
-
+    
     const addWhiskeyToTry = (props) => {
         const newWhiskeyToTry = {
             title: comparable.title,
@@ -21,6 +21,7 @@ export const Comparable = ({comparable}) => {
         console.log("newWhiskeyToTry", newWhiskeyToTry)
         addUserWhiskey(newWhiskeyToTry)
     }
+
     return (
     <div className="comparable">
       <h3 className="whiskey__name">

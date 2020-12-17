@@ -4,7 +4,7 @@ import { Whiskey } from "./Whiskey";
 import "./Whiskey.css";
 
 export const WhiskeySearchList = (props) => {
-  const { whiskeys, getWhiskeys, searchTerms, userWhiskeys } = useContext(
+  const { whiskeys, getWhiskeys, searchTerms } = useContext(
     WhiskeyContext
   );
   const [filteredWhiskeys, setFilteredWhiskeys] = useState([]);
@@ -13,20 +13,23 @@ export const WhiskeySearchList = (props) => {
     getWhiskeys();
   }, []);
 
-  useEffect(() => {
-    getWhiskeys();
-  }, []);
-
+  
   useEffect(() => {
     if (searchTerms !== "") {
       const subset = whiskeys.filter((whiskey) =>
-        whiskey.title.toLowerCase().startsWith(searchTerms.toLowerCase())
+      whiskey.title.toLowerCase().startsWith(searchTerms.toLowerCase())
       );
       setFilteredWhiskeys(subset);
     } else {
       setFilteredWhiskeys([]);
     }
   }, [searchTerms, whiskeys]);
+
+  
+//     ***THIS CODE WILL BE IMPLEMENTED LATER***
+//    useEffect(() => {
+//    getWhiskeys();
+//    }, []);
 
 //   useEffect(() => {
 //     if (searchTerms !== "") {
@@ -54,11 +57,13 @@ export const WhiskeySearchList = (props) => {
 //       setFilteredWhiskeys([]);
 //     }
 //   }, [searchTerms, whiskeys]);
+// ******************************************
 
   return (
     <div className="whiskeys">
       <>
         <h1>WHISKEYS</h1>
+        <h4>enter a whiskey you like above to see some other whiskey's with similar flavor profiles <br /> once you find one you like, click the button to add it to your 'to try' list</h4>
 
         {filteredWhiskeys.map((whiskey) => {
           return <Whiskey key={whiskey.id} whiskey={whiskey} />;

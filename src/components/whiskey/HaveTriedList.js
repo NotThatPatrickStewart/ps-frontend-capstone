@@ -14,6 +14,7 @@ export const HaveTriedList = (props) => {
     <div className="whiskeys">
       <>
         <h1>WHISKEYS I'VE TRIED</h1>
+        <h4>click on a whiskey to see more info</h4>
         {userWhiskeys.map((userWhiskey) => {
           if (userWhiskey.rating !== null) {
             return <HaveTried key={userWhiskey.id} userWhiskey={userWhiskey} />;
