@@ -10,7 +10,9 @@ export const Whiskey = ({ whiskey }) => (
     <div className="whiskey__region">REGION: {whiskey.region}</div>
     <div className="whiskey__price">${whiskey.price}</div>
     {/* <div className="whiskey__tags">{whiskey.tags.title}</div> */}
+    <h3>THEN TRY ONE OF THESE:</h3>
     {whiskey.comparables.map((comparable) => <Comparable key={comparable.id} comparable={comparable} />
     )}
   </section>
 );
+
