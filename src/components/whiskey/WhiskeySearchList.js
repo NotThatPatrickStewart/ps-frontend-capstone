@@ -6,6 +6,7 @@ import "./Whiskey.css";
 export const WhiskeySearchList = (props) => {
   const { whiskeys, getWhiskeys, searchTerms } = useContext(WhiskeyContext);
   const [filteredWhiskeys, setFilteredWhiskeys] = useState([]);
+  //get userWhiskeys
 
   useEffect(() => {
     getWhiskeys();
