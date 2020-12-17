@@ -25,7 +25,7 @@ export const ToTryUserWhiskeyDetail = (props) => {
     }
     )};
     // console.log("whiskeyId", whiskeyId) //this concolse log breaks everything
-  }, []); //removed userWhiskey from array base state, this removed the second fetch call error 404 not found where id returned as an integer
+  }, [userWhiskey]); //removed userWhiskey from array base state, this removed the second fetch call error 404 not found where id returned as an integer
 
 console.log("userWhiskey", userWhiskey)
  console.log("whiskey", whiskey) //this console log returns an empty object
@@ -35,8 +35,8 @@ console.log("userWhiskey", userWhiskey)
       <section className="userWhiskeyDetail">
         <h3 className="userWhiskey__name">{userWhiskey.title}</h3>
         <img className="userWhiskey__image" src={userWhiskey.list_img_url} />
-        <div className="userWhiskey__region">REGION: {userWhiskey.region}</div>
-        <div className="userWhiskey__region">${userWhiskey.price}</div>
+        <div className="userWhiskey__region">REGION: {whiskey.region}</div>
+        <div className="userWhiskey__region">${whiskey.price}</div>
         <div className="userWhiskey__notes">NOTES: {userWhiskey.notes}</div>
         {/* <div className="userWhiskey__tags">{userWhiskey.tags.title}</div> */}
         <button onClick={
