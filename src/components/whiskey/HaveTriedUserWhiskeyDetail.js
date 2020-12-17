@@ -15,17 +15,21 @@ export const HaveTriedUserWhiskeyDetail = (props) => {
     getUserWhiskeyById(userWhiskeyId).then(setUserWhiskey);
   }, []);
 
-  //This is the useEffect I'm trying to use to get the data from whiskey.json. I think because it's a use effect and not riunning on page load,
-  //it's coming back as not a number. I've tried refactoring this, combining use effects, all sorts of things. I feel like there must be an easier way to so this,
-  //but I'm just not wrapping my head around it.
   useEffect(() => {
+    if (userWhiskey.id !== undefined) { //added conditional, this removed the first fetch call error 404 not found where id returned as NaN
     const whiskeyId = parseInt(userWhiskey.whiskeyId);
-    getWhiskeyById(whiskeyId).then(setWhiskey);
-    console.log("whiskeyId", whiskeyId)
-  }, [userWhiskey]);
+    getWhiskeyById(whiskeyId)
+    .then(w => {
+     console.log("w", w) 
+     setWhiskey(w)
+     
+    }
+    )};
+    // console.log("whiskeyId", whiskeyId) //this concolse log breaks everything
+  }, []); //removed userWhiskey from array base state, this removed the second fetch call error 404 not found where id returned as an integer
 
 console.log("userWhiskey", userWhiskey)
-console.log("whiskey", whiskey)
+ console.log("whiskey", whiskey) //this console log returns an empty object
 
   return (
     <>
