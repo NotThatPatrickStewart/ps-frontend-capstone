@@ -22,7 +22,6 @@ export const HaveTriedUserWhiskeyDetail = (props) => {
     .then(w => {
      console.log("w", w) 
      setWhiskey(w)
-     
     }
     )};
     // console.log("whiskeyId", whiskeyId) //this concolse log breaks everything
