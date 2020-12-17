@@ -5,6 +5,12 @@
       "password": "anorak",
       "name": "Patrick Stewart",
       "id": 1
+    },
+    {
+      "email": "nopunin@10did.com",
+      "password": "puns",
+      "name": "Bryan Punmaster",
+      "id": 2
     }
   ],
   "userWhiskeys": [
@@ -91,7 +97,7 @@
       "userId": 1,
       "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
       "notes": "",
-      "rating": null,
+      "rating": 50,
       "region": "Speyside",
       "price": 64,
       "id": 16
@@ -117,6 +123,50 @@
       "region": "Campbeltown",
       "price": 68,
       "id": 19
+    },
+    {
+      "title": "Springbank 10",
+      "whiskeyId": 456,
+      "userId": 2,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683108/p81mw43tkkywuvvxqta7.jpg",
+      "notes": "",
+      "rating": 15,
+      "region": "Campbeltown",
+      "price": 52,
+      "id": 20
+    },
+    {
+      "title": "Macallan 12 Sherry",
+      "whiskeyId": 384,
+      "userId": 2,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683058/h3lwmpxjsnac2shudoyi.jpg",
+      "notes": "",
+      "rating": null,
+      "region": "Speyside",
+      "price": 50,
+      "id": 21
+    },
+    {
+      "title": "Caol Ila 12",
+      "whiskeyId": 159,
+      "userId": 2,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682911/kliniav3didvaflgyw8q.jpg",
+      "notes": "",
+      "rating": null,
+      "region": "Islay",
+      "price": 54,
+      "id": 22
+    },
+    {
+      "title": "W.L. Weller 12",
+      "whiskeyId": 498,
+      "userId": 2,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683141/agshxbn3brwpoulluoqp.jpg",
+      "notes": "",
+      "rating": 55,
+      "region": "Bourbon",
+      "price": 26,
+      "id": 23
     }
   ]
 }
