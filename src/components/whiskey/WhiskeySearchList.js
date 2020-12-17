@@ -13,14 +13,11 @@ export const WhiskeySearchList = (props) => {
     getWhiskeys();
   }, []);
 
-  useEffect(() => {
-    getWhiskeys();
-  }, []);
-
+  
   useEffect(() => {
     if (searchTerms !== "") {
       const subset = whiskeys.filter((whiskey) =>
-        whiskey.title.toLowerCase().startsWith(searchTerms.toLowerCase())
+      whiskey.title.toLowerCase().startsWith(searchTerms.toLowerCase())
       );
       setFilteredWhiskeys(subset);
     } else {
@@ -28,7 +25,12 @@ export const WhiskeySearchList = (props) => {
     }
   }, [searchTerms, whiskeys]);
 
-//   ***THIS CODE WILL BE IMPLEMENTED LATER***
+  
+//     ***THIS CODE WILL BE IMPLEMENTED LATER***
+//    useEffect(() => {
+//    getWhiskeys();
+//    }, []);
+
 //   useEffect(() => {
 //     if (searchTerms !== "") {
 //       const searchedWhiskeys = whiskeys.filter((whiskey) =>
