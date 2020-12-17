@@ -25,7 +25,7 @@ export const HaveTriedUserWhiskeyDetail = (props) => {
     }
     )};
     // console.log("whiskeyId", whiskeyId) //this concolse log breaks everything
-  }, []); //removed userWhiskey from array base state, this removed the second fetch call error 404 not found where id returned as an integer
+  }, [userWhiskey]); //removed userWhiskey from array base state, this removed the second fetch call error 404 not found where id returned as an integer
 
 console.log("userWhiskey", userWhiskey)
  console.log("whiskey", whiskey) //this console log returns an empty object
