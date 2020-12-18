@@ -25,7 +25,7 @@ export const Comparable = ({comparable}) => {
       {comparable.title}
       </h3>
       <img className="whiskey__image" src={comparable.list_img_url} alt="whiskey bottle" />
-      <div className="whiskey__region">REGION: {comparable.region}</div>
+      <div className="whiskey__region">TYPE: {comparable.region}</div>
     <div className="whiskey__price">${comparable.price}</div>
     {/* <div className="whiskey__tags">{comparable.tags.title}</div> */}
       <button onClick = {addWhiskeyToTry} > ADD TO TRY LIST</button>

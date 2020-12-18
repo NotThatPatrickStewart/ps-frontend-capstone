@@ -7,7 +7,7 @@ export const Whiskey = ({ whiskey }) => (
     <h3 className="whiskey__name">IF YOU LIKE: {whiskey.title}</h3>
     {/* {console.log("whiskey", whiskey)} */}
     <img className="whiskey__image" src={whiskey.list_img_url} alt="whiskey bottle" />
-    <div className="whiskey__region">REGION: {whiskey.region}</div>
+    <div className="whiskey__region">TYPE: {whiskey.region}</div>
     <div className="whiskey__price">${whiskey.price}</div>
     {/* <div className="whiskey__tags">{whiskey.tags.title}</div> */}
     <h3>THEN TRY ONE OF THESE:</h3>
