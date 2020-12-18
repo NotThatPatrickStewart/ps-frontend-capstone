@@ -29,7 +29,7 @@ export const ToTryUserWhiskeyForm = (props) => {
             ref={notes}
             required
             autoFocus
-            className="form-control"
+            className="form-control notes"
             placeholder="optional"
           />
         </div>

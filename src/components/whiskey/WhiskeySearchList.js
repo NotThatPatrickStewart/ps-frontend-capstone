@@ -61,9 +61,10 @@ export const WhiskeySearchList = (props) => {
   return (
     <div className="whiskeys">
       <>
+      <div className="listElements">
         <h1>WHISKEYS</h1>
         <h4>enter a whiskey you like above to see some other whiskey's with similar flavor profiles <br /> once you find one you like, click the button to add it to your 'to try' list</h4>
-
+        </div>
         {filteredWhiskeys.map((whiskey) => {
           return <Whiskey key={whiskey.id} whiskey={whiskey} />;
         })}
