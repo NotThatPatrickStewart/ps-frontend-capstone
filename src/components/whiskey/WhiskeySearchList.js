@@ -10,7 +10,7 @@ export const WhiskeySearchList = (props) => {
 
   useEffect(() => {
     getWhiskeys();
-  }, [getWhiskeys]);
+  }, []);
 
   useEffect(() => {
     if (searchTerms !== "") {

@@ -23,7 +23,7 @@ export const ToTryUserWhiskeyDetail = (props) => {
      setWhiskey(w)
     }
     )};
-  }, [userWhiskey, getWhiskeyById]);
+  }, [userWhiskey]);
 
   return (
     <>
