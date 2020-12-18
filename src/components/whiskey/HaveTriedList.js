@@ -16,8 +16,11 @@ export const HaveTriedList = (props) => {
   return (
     <div className="whiskeys">
       <>
+      <div className="listElements">
+      <div className="whiskeyHeader">
         <h1>WHISKEYS I'VE TRIED</h1>
         <h4>click on a whiskey to see more info</h4>
+        </div>
         {userWhiskeys.map((userWhiskey) => {
           if (userWhiskey.rating !== null && userWhiskey.userId === user) {
             return <HaveTried key={userWhiskey.id} userWhiskey={userWhiskey} />;
@@ -25,6 +28,7 @@ export const HaveTriedList = (props) => {
             return ""
           }
         })}
+        </div>
       </>
     </div>
   )};
