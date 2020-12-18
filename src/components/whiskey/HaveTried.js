@@ -8,7 +8,7 @@ export const HaveTried = ({ userWhiskey }) => {
       <h3 className="whiskey__name">
         <Link to={`/have-tried-userWhiskeys/${userWhiskey.id}`}>{userWhiskey.title}</Link>
       </h3>
-      <img className="whiskey__image" src={userWhiskey.list_img_url} />
+      <img className="whiskey__image" src={userWhiskey.list_img_url} alt="whiskey bottle" />
     </div>
   );
 };
