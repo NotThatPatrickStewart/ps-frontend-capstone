@@ -202,69 +202,6 @@
       "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689025/d9xnegwawt4xug85wxqb.jpg"
     },
     {
-      "id": 518,
-      "title": "Woodford",
-      "img_url": null,
-      "region": null,
-      "price": 66,
-      "rating": 99,
-      "description": null,
-      "reviews": [],
-      "comparables": [
-        {
-          "id": 255,
-          "title": "Glenfiddich 12",
-          "img_url": "http://i.imgur.com/XueX1uz.png",
-          "rating": 77,
-          "price": 33,
-          "region": "Speyside",
-          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682966/sylszjjtsoglgxcbpueq.jpg",
-          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689011/iwdhu5ujkrmfpogtfexu.jpg"
-        },
-        {
-          "id": 355,
-          "title": "Lagavulin 16",
-          "img_url": "https://flaviar.com/gui/img/2014/11/10/18/2014111018_lagavulin16_web_original.png",
-          "rating": 88,
-          "price": 70,
-          "region": "Islay",
-          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683036/timnwb5uiw0oo0twd2sx.jpg",
-          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689089/wpmxs2ljvxi94mjt5vvo.jpg"
-        },
-        {
-          "id": 358,
-          "title": "Laphroaig 10",
-          "img_url": "http://www.31dover.com/media/catalog/product/cache/1/image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/3/1/31dover-laphroaig-320x1000_1__1.png",
-          "rating": 85,
-          "price": 41,
-          "region": "Islay",
-          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683038/p4m9mbpb6xmudtiqrkfo.jpg",
-          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689091/roulpammwyh76wcvbi4i.jpg"
-        }
-      ],
-      "comparable": [
-        276,
-        284,
-        255,
-        333,
-        346,
-        355,
-        358,
-        503,
-        466,
-        275,
-        384,
-        59,
-        269,
-        329,
-        195,
-        371
-      ],
-      "tags": [],
-      "list_img_url": null,
-      "detail_img_url": null
-    },
-    {
       "id": 28,
       "title": "Aberlour A'bunadh batch #39",
       "img_url": "http://shop.whiskybase.com/images/whiskies/76839.png",
@@ -6941,13 +6878,13 @@
       },
       {
           "id": 518,
-          "title": "woodford",
-          "img_url": null,
-          "rating": 99,
-          "price": 66,
-          "region": null,
-          "list_img_url": null,
-          "detail_img_url": null
+          "title": "Woodford Reserve",
+          "img_url": "http://aries-wineny.com/wp-content/uploads/2014/09/woodford-reserve.jpg",
+          "rating": 78,
+          "price": 31,
+          "region": "Bourbon",
+          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689119/b9c19mrjwesamr1vxtt8.jpg"
       },
       {
           "id": 255,
@@ -7020,13 +6957,13 @@
       },
       {
           "id": 518,
-          "title": "woodford",
-          "img_url": null,
-          "rating": 99,
-          "price": 66,
-          "region": null,
-          "list_img_url": null,
-          "detail_img_url": null
+          "title": "Woodford Reserve",
+          "img_url": "http://aries-wineny.com/wp-content/uploads/2014/09/woodford-reserve.jpg",
+          "rating": 78,
+          "price": 31,
+          "region": "Bourbon",
+          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689119/b9c19mrjwesamr1vxtt8.jpg"
       },
       {
           "id": 358,
@@ -8127,13 +8064,13 @@
   "comparables": [
       {
           "id": 518,
-          "title": "woodford",
-          "img_url": null,
-          "rating": 99,
-          "price": 66,
-          "region": null,
-          "list_img_url": null,
-          "detail_img_url": null
+          "title": "Woodford Reserve",
+          "img_url": "http://aries-wineny.com/wp-content/uploads/2014/09/woodford-reserve.jpg",
+          "rating": 78,
+          "price": 31,
+          "region": "Bourbon",
+          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689119/b9c19mrjwesamr1vxtt8.jpg"
       },
       {
           "id": 355,
@@ -8738,13 +8675,13 @@
       },
       {
           "id": 518,
-          "title": "woodford",
-          "img_url": null,
-          "rating": 99,
-          "price": 66,
-          "region": null,
-          "list_img_url": null,
-          "detail_img_url": null
+          "title": "Woodford Reserve",
+          "img_url": "http://aries-wineny.com/wp-content/uploads/2014/09/woodford-reserve.jpg",
+          "rating": 78,
+          "price": 31,
+          "region": "Bourbon",
+          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689119/b9c19mrjwesamr1vxtt8.jpg"
       }
   ],
   "comparable": [
@@ -9195,13 +9132,13 @@
       },
       {
           "id": 518,
-          "title": "woodford",
-          "img_url": null,
-          "rating": 99,
-          "price": 66,
-          "region": null,
-          "list_img_url": null,
-          "detail_img_url": null
+          "title": "Woodford Reserve",
+          "img_url": "http://aries-wineny.com/wp-content/uploads/2014/09/woodford-reserve.jpg",
+          "rating": 78,
+          "price": 31,
+          "region": "Bourbon",
+          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689119/b9c19mrjwesamr1vxtt8.jpg"
       }
   ],
   "comparable": [
@@ -9259,13 +9196,13 @@
   "comparables": [
       {
           "id": 518,
-          "title": "woodford",
-          "img_url": null,
-          "rating": 99,
-          "price": 66,
-          "region": null,
-          "list_img_url": null,
-          "detail_img_url": null
+          "title": "Woodford Reserve",
+          "img_url": "http://aries-wineny.com/wp-content/uploads/2014/09/woodford-reserve.jpg",
+          "rating": 78,
+          "price": 31,
+          "region": "Bourbon",
+          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689119/b9c19mrjwesamr1vxtt8.jpg"
       },
       {
           "id": 255,
@@ -13951,13 +13888,13 @@
   "comparables": [
       {
           "id": 518,
-          "title": "woodford",
-          "img_url": null,
-          "rating": 99,
-          "price": 66,
-          "region": null,
-          "list_img_url": null,
-          "detail_img_url": null
+          "title": "Woodford Reserve",
+          "img_url": "http://aries-wineny.com/wp-content/uploads/2014/09/woodford-reserve.jpg",
+          "rating": 78,
+          "price": 31,
+          "region": "Bourbon",
+          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689119/b9c19mrjwesamr1vxtt8.jpg"
       },
       {
           "id": 255,
@@ -14065,13 +14002,13 @@
       },
       {
           "id": 518,
-          "title": "woodford",
-          "img_url": null,
-          "rating": 99,
-          "price": 66,
-          "region": null,
-          "list_img_url": null,
-          "detail_img_url": null
+          "title": "Woodford Reserve",
+          "img_url": "http://aries-wineny.com/wp-content/uploads/2014/09/woodford-reserve.jpg",
+          "rating": 78,
+          "price": 31,
+          "region": "Bourbon",
+          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689119/b9c19mrjwesamr1vxtt8.jpg"
       }
   ],
   "comparable": [
@@ -16375,13 +16312,13 @@
   "comparables": [
       {
           "id": 518,
-          "title": "woodford",
-          "img_url": null,
-          "rating": 99,
-          "price": 66,
-          "region": null,
-          "list_img_url": null,
-          "detail_img_url": null
+          "title": "Woodford Reserve",
+          "img_url": "http://aries-wineny.com/wp-content/uploads/2014/09/woodford-reserve.jpg",
+          "rating": 78,
+          "price": 31,
+          "region": "Bourbon",
+          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689119/b9c19mrjwesamr1vxtt8.jpg"
       },
       {
           "id": 255,
@@ -25361,13 +25298,13 @@
       },
       {
           "id": 518,
-          "title": "woodford",
-          "img_url": null,
-          "rating": 99,
-          "price": 66,
-          "region": null,
-          "list_img_url": null,
-          "detail_img_url": null
+          "title": "Woodford Reserve",
+          "img_url": "http://aries-wineny.com/wp-content/uploads/2014/09/woodford-reserve.jpg",
+          "rating": 78,
+          "price": 31,
+          "region": "Bourbon",
+          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689119/b9c19mrjwesamr1vxtt8.jpg"
       },
       {
           "id": 355,
@@ -26706,13 +26643,13 @@
       },
       {
           "id": 518,
-          "title": "woodford",
-          "img_url": null,
-          "rating": 99,
-          "price": 66,
-          "region": null,
-          "list_img_url": null,
-          "detail_img_url": null
+          "title": "Woodford Reserve",
+          "img_url": "http://aries-wineny.com/wp-content/uploads/2014/09/woodford-reserve.jpg",
+          "rating": 78,
+          "price": 31,
+          "region": "Bourbon",
+          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689119/b9c19mrjwesamr1vxtt8.jpg"
       }
   ],
   "comparable": [
@@ -31368,13 +31305,13 @@
       },
       {
           "id": 518,
-          "title": "woodford",
-          "img_url": null,
-          "rating": 99,
-          "price": 66,
-          "region": null,
-          "list_img_url": null,
-          "detail_img_url": null
+          "title": "Woodford Reserve",
+          "img_url": "http://aries-wineny.com/wp-content/uploads/2014/09/woodford-reserve.jpg",
+          "rating": 78,
+          "price": 31,
+          "region": "Bourbon",
+          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689119/b9c19mrjwesamr1vxtt8.jpg"
       },
       {
           "id": 255,
@@ -35237,13 +35174,13 @@
       },
       {
           "id": 518,
-          "title": "woodford",
-          "img_url": null,
-          "rating": 99,
-          "price": 66,
-          "region": null,
-          "list_img_url": null,
-          "detail_img_url": null
+          "title": "Woodford Reserve",
+          "img_url": "http://aries-wineny.com/wp-content/uploads/2014/09/woodford-reserve.jpg",
+          "rating": 78,
+          "price": 31,
+          "region": "Bourbon",
+          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689119/b9c19mrjwesamr1vxtt8.jpg"
       },
       {
           "id": 255,
@@ -35437,13 +35374,13 @@
       },
       {
           "id": 518,
-          "title": "woodford",
-          "img_url": null,
-          "rating": 99,
-          "price": 66,
-          "region": null,
-          "list_img_url": null,
-          "detail_img_url": null
+          "title": "Woodford Reserve",
+          "img_url": "http://aries-wineny.com/wp-content/uploads/2014/09/woodford-reserve.jpg",
+          "rating": 78,
+          "price": 31,
+          "region": "Bourbon",
+          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689119/b9c19mrjwesamr1vxtt8.jpg"
       }
   ],
   "comparable": [
@@ -40657,13 +40594,13 @@
       },
       {
           "id": 518,
-          "title": "woodford",
-          "img_url": null,
-          "rating": 99,
-          "price": 66,
-          "region": null,
-          "list_img_url": null,
-          "detail_img_url": null
+          "title": "Woodford Reserve",
+          "img_url": "http://aries-wineny.com/wp-content/uploads/2014/09/woodford-reserve.jpg",
+          "rating": 78,
+          "price": 31,
+          "region": "Bourbon",
+          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689119/b9c19mrjwesamr1vxtt8.jpg"
       },
       {
           "id": 355,
@@ -41632,13 +41569,13 @@
   "comparables": [
       {
           "id": 518,
-          "title": "woodford",
-          "img_url": null,
-          "rating": 99,
-          "price": 66,
-          "region": null,
-          "list_img_url": null,
-          "detail_img_url": null
+          "title": "Woodford Reserve",
+          "img_url": "http://aries-wineny.com/wp-content/uploads/2014/09/woodford-reserve.jpg",
+          "rating": 78,
+          "price": 31,
+          "region": "Bourbon",
+          "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+          "detail_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463689119/b9c19mrjwesamr1vxtt8.jpg"
       },
       {
           "id": 255,
