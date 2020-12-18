@@ -29,11 +29,12 @@ export const HaveTriedUserWhiskeyForm = (props) => {
             ref={notes}
             required
             autoFocus
-            className="form-control"
+            className="form-control notes"
             placeholder="whiskey notes"
           />
         </div>
       </fieldset>
+      <div className="buttonDiv">
       <button
         type="submit"
         onClick={(evt) => {
@@ -45,6 +46,7 @@ export const HaveTriedUserWhiskeyForm = (props) => {
         SAVE
       </button>
       <button onClick={() => history.goBack()}>BACK</button>
+      </div>
     </form>
   );
 };
