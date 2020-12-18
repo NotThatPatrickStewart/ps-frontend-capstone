@@ -5,18 +5,18 @@
   border: 1px solid goldenrod;
 }
 
-.comparable, .userWhiskeys, .whiskeys, .userWhiskeyDetail {
+.comparable, .whiskeys, .userWhiskeyDetail {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
 border: 1px solid goldenrod;
 }
 
-/* .whiskey__image, .userWhiskey__image {
+.whiskey__image, .userWhiskey__image {
   width: 200px;
   height: 200px;
   object-fit: scale-down;
-} */
+}
 
 .buttonDiv {
 display: flex;
@@ -30,4 +30,11 @@ justify-content: space-evenly;
 
 .notes {
 width: 30%;
+}
+
+.userWhiskeys {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+border: 1px solid goldenrod;
 }
