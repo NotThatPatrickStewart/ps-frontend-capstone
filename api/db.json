@@ -13,5 +13,33 @@
       "id": 2
     }
   ],
-  "userWhiskeys": []
+  "userWhiskeys": [
+    {
+      "title": "Booker's Bourbon",
+      "whiskeyId": 116,
+      "userId": 1,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+      "notes": "",
+      "rating": null,
+      "id": 1
+    },
+    {
+      "title": "Bowmore Legend",
+      "whiskeyId": 122,
+      "userId": 1,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682886/gciyame3nozwilidnckx.jpg",
+      "notes": "this one is too smoky",
+      "rating": 25,
+      "id": 2
+    },
+    {
+      "title": "Old Rip Van Winkle 10 Year",
+      "whiskeyId": 422,
+      "userId": 1,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683086/cqybpa62oqqqjltkfkue.jpg",
+      "notes": "It was great!",
+      "rating": 85,
+      "id": 3
+    }
+  ]
 }
