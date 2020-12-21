@@ -16,14 +16,18 @@ export const HaveTriedUserWhiskeyDetail = (props) => {
   }, [props.match.params.userWhiskeyId, getUserWhiskeyById]);
 
   useEffect(() => {
-    if (userWhiskey.id !== undefined) {
+    if (userWhiskey.id !== undefined) { 
     const whiskeyId = parseInt(userWhiskey.whiskeyId);
     getWhiskeyById(whiskeyId)
     .then(w => {
+    //  console.log("w", w) 
      setWhiskey(w)
     }
     )};
   }, [userWhiskey]);
+
+// console.log("userWhiskey", userWhiskey)
+//  console.log("whiskey", whiskey)
 
   return (
     <>

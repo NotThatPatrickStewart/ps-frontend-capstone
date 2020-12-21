@@ -9,6 +9,10 @@ export const ToTry = ({ userWhiskey }) => {
         <Link to={`/to-try-userWhiskeys/${userWhiskey.id}`}>{userWhiskey.title}</Link>
       </h3>
       <img className="whiskey__image" src={userWhiskey.list_img_url} alt="whiskey bottle" />
+<<<<<<< HEAD
+=======
+      <div className="whiskey>>rating">{userWhiskey.rating}</div>
+>>>>>>> main
     </div>
   );
 };
