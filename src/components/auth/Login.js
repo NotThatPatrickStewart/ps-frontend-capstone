@@ -10,7 +10,6 @@ export const Login = props => {
     const passwordDialog = useRef()
 
     const existingUserCheck = () => {
-        // If your json-server URL is different, please change it below!
         return fetch(`http://localhost:8088/users?email=${email.current.value}`)
             .then(_ => _.json())
             .then(user => user.length ? user[0] : false)
@@ -22,7 +21,6 @@ export const Login = props => {
         existingUserCheck()
             .then(exists => {
                 if (exists && exists.password === password.current.value) {
-                    // The user id is saved under the key app_user_id in local Storage. Change below if needed!
                     localStorage.setItem("app_user_id", exists.id)
                     props.history.push("/")
                 } else if (exists && exists.password !== password.current.value) {

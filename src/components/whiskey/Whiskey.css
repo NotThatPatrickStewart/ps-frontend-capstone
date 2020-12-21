@@ -1,19 +1,40 @@
-  .whiskey {
-      flex-basis: 28%;
-      margin: 5px;
-      padding: 5px;
-      border: 1px solid goldenrod;
-  }
+.whiskey {
+  flex-basis: 28%;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid goldenrod;
+}
 
-  .comparable, .userWhiskeys, .whiskeys, .userWhiskeyDetail {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border: 1px solid goldenrod;
-  }
+.comparable, .whiskeys, .userWhiskeyDetail {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+border: 1px solid goldenrod;
+}
 
-  .whiskey__image, .userWhiskey__image {
-      width: 100px;
-      height: 200px;
-      object-fit: scale-down;
-  }
+.whiskey__image, .userWhiskey__image {
+  width: 200px;
+  height: 200px;
+  object-fit: scale-down;
+}
+
+.buttonDiv {
+display: flex;
+}
+
+.buttonParentDiv, .whiskeyHeader, .whiskeyData, .listElemets {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+.notes {
+width: 30%;
+}
+
+.userWhiskeys {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+border: 1px solid goldenrod;
+}
