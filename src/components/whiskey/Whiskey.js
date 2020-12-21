@@ -4,12 +4,12 @@ import { Comparable } from "./Comparable";
 
 export const Whiskey = ({ whiskey }) => (
   <section className="whiskey">
-    <div className="whiskeyHeader">
+    <div className="whiskeyHeaderSearch">
     <h3 className="whiskey__name">IF YOU LIKE: {whiskey.title}</h3>
     {/* {console.log("whiskey", whiskey)} */}
     <img className="whiskey__image" src={whiskey.list_img_url} alt="whiskey bottle" />
     </div>
-    <div className="whiskeyData">
+    <div className="whiskeyDataSearch">
     <div className="whiskey__region">TYPE: {whiskey.region}</div>
     <div className="whiskey__price">${whiskey.price}</div>
     {/* <div className="whiskey__tags">{whiskey.tags.title}</div> */}
