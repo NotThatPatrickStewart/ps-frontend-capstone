@@ -16,28 +16,18 @@ export const ToTryUserWhiskeyDetail = (props) => {
   }, [getUserWhiskeyById, props.match.params.userWhiskeyId]);
 
   useEffect(() => {
-<<<<<<< HEAD
-    if (userWhiskey.id !== undefined) {
-    const whiskeyId = parseInt(userWhiskey.whiskeyId);
-    getWhiskeyById(whiskeyId)
-    .then(w => {
-=======
     if (userWhiskey.id !== undefined) { 
     const whiskeyId = parseInt(userWhiskey.whiskeyId);
     getWhiskeyById(whiskeyId)
     .then(w => {
           //  console.log("w", w) 
->>>>>>> main
      setWhiskey(w)
     }
     )};
   }, [userWhiskey]);
-<<<<<<< HEAD
-=======
 
 // console.log("userWhiskey", userWhiskey)
 //  console.log("whiskey", whiskey)
->>>>>>> main
 
   return (
     <>
@@ -45,13 +35,9 @@ export const ToTryUserWhiskeyDetail = (props) => {
       <div className="whiskeyHeader">
         <h3 className="userWhiskey__name">{userWhiskey.title}</h3>
         <img className="userWhiskey__image" src={userWhiskey.list_img_url} alt="whiskey bottle" />
-<<<<<<< HEAD
         </div>
         <div className="whiskeyData">
         <div className="userWhiskey__region">TYPE: {whiskey.region}</div>
-=======
-        <div className="userWhiskey__region">REGION: {whiskey.region}</div>
->>>>>>> main
         <div className="userWhiskey__region">${whiskey.price}</div>
         <div className="userWhiskey__notes">NOTES: {userWhiskey.notes}</div>
         {/* <div className="userWhiskey__tags">{userWhiskey.tags.title}</div> */}
