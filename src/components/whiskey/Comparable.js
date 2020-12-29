@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./Whiskey.css";
 import { WhiskeyContext } from "./WhiskeyProvider";
+import Button from 'react-bootstrap/Button';
 
 export const Comparable = ({comparable}) => {
 
@@ -33,7 +34,7 @@ export const Comparable = ({comparable}) => {
     {/* <div className="whiskey__tags">{comparable.tags.title}</div> */}
     </div>
     <div className="buttonParentDiv">
-      <button onClick = {addWhiskeyToTry} > ADD TO TRY LIST</button>
+      <Button variant="dark" onClick = {addWhiskeyToTry} > ADD TO TRY LIST</Button>
     </div>
     </div>
   );

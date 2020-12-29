@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import { WhiskeyContext } from "./WhiskeyProvider";
 import { useHistory } from "react-router-dom";
+import { Button } from "react-bootstrap";
+
 
 export const HaveTriedUserWhiskeyDetail = (props) => {
   const { getUserWhiskeyById, deleteWhiskey, getWhiskeyById } = useContext(WhiskeyContext);
@@ -44,21 +46,21 @@ export const HaveTriedUserWhiskeyDetail = (props) => {
         {/* <div className="userWhiskey__tags">{userWhiskey.tags.title}</div> */}
         </div>
         <div className="buttonParentDiv">
-        <button onClick={
+        <Button variant="dark" onClick={
             () => {
                 props.history.push(`/have-tried-userWhiskeys/edit/${userWhiskey.id}`)
             }}>
                 EDIT NOTE
-            </button>
-            <button onClick={
+            </Button>
+            <Button variant="dark" onClick={
                     () => {
                       deleteWhiskey(userWhiskey.id)
                         .then(() => {
                             props.history.push("/have-tried")
                         })
                     }
-                }>REMOVE WHISKEY</button>
-            <button onClick={() => history.goBack()}>BACK</button>
+                }>REMOVE WHISKEY</Button>
+            <Button variant="dark" onClick={() => history.goBack()}>BACK</Button>
             </div>
       </section>
     </>

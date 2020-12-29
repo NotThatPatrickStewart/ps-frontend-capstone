@@ -2,6 +2,8 @@ import React, { useContext, useRef } from "react";
 import { WhiskeyContext } from "./WhiskeyProvider";
 import "./Whiskey.css";
 import { useHistory } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
+
 
 export const ToTryUserWhiskeyForm = (props) => {
   const { updateUserWhiskey } = useContext(WhiskeyContext);
@@ -49,7 +51,7 @@ export const ToTryUserWhiskeyForm = (props) => {
         </div>
       </fieldset>
       <div className="buttonDiv">
-      <button
+      <Button variant="dark"
         type="submit"
         onClick={(evt) => {
           evt.preventDefault(); // Prevent browser from submitting the form
@@ -58,8 +60,8 @@ export const ToTryUserWhiskeyForm = (props) => {
         className="btn btn-primary"
       >
         SAVE
-      </button>
-      <button onClick={() => history.goBack()}>BACK</button>
+      </Button>
+      <Button variant="dark" onClick={() => history.goBack()}>BACK</Button>
       </div>
     </form>
   );
