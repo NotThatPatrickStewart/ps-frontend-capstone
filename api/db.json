@@ -21,33 +21,6 @@
   ],
   "userWhiskeys": [
     {
-<<<<<<< HEAD
-      "title": "Booker's Bourbon",
-      "whiskeyId": 116,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
-      "notes": "",
-      "rating": null,
-      "id": 1
-    },
-    {
-      "title": "Bowmore Legend",
-      "whiskeyId": 122,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682886/gciyame3nozwilidnckx.jpg",
-      "notes": "this one is too smoky",
-      "rating": 25,
-      "id": 2
-    },
-    {
-      "title": "Old Rip Van Winkle 10 Year",
-      "whiskeyId": 422,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683086/cqybpa62oqqqjltkfkue.jpg",
-      "notes": "It was great!",
-      "rating": 85,
-      "id": 3
-=======
       "title": "Jack Daniel's Single Barrel",
       "whiskeyId": 316,
       "userId": 1,
@@ -55,24 +28,6 @@
       "notes": "",
       "rating": 37,
       "id": 26
-    },
-    {
-      "title": "Glenfiddich Snow Phoenix",
-      "whiskeyId": 261,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682973/pdutjwxymclaezs2h9lw.jpg",
-      "notes": "",
-      "rating": null,
-      "id": 27
-    },
-    {
-      "title": "Aberlour 12 Non Chill Filtered",
-      "whiskeyId": 22,
-      "userId": 1,
-      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
-      "notes": "",
-      "rating": null,
-      "id": 28
     },
     {
       "title": "Jack Daniel's Single Barrel",
@@ -145,7 +100,60 @@
       "notes": "yup",
       "rating": 65,
       "id": 36
->>>>>>> main
+    },
+    {
+      "title": "Laphroaig 10",
+      "whiskeyId": 358,
+      "userId": 1,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683038/p4m9mbpb6xmudtiqrkfo.jpg",
+      "notes": "preeeettyyyy good",
+      "rating": 85,
+      "id": 37
+    },
+    {
+      "title": "Amrut Portonova",
+      "whiskeyId": 40,
+      "userId": 1,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683066/axsfxttzigvbf1bfvki8.jpg",
+      "notes": "",
+      "rating": null,
+      "id": 38
+    },
+    {
+      "title": "Old Ezra 101",
+      "whiskeyId": 411,
+      "userId": 1,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683076/t81pgxj0tvv29pushvzp.jpg",
+      "notes": "",
+      "rating": null,
+      "id": 39
+    },
+    {
+      "title": "Rock Hill Farms Single Barrel Bourbon",
+      "whiskeyId": 440,
+      "userId": 1,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683098/setuf9s2k3nh5lhkz4by.jpg",
+      "notes": "",
+      "rating": null,
+      "id": 40
+    },
+    {
+      "title": "Talisker Storm",
+      "whiskeyId": 476,
+      "userId": 1,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463683126/pae9ajnhfnjo3nsswbex.jpg",
+      "notes": "",
+      "rating": null,
+      "id": 41
+    },
+    {
+      "title": "Bunnahabhain 12",
+      "whiskeyId": 151,
+      "userId": 1,
+      "list_img_url": "https://res.cloudinary.com/dt4sawqjx/image/upload/v1463682906/agohnwp5gxq18kyqpazf.jpg",
+      "notes": "",
+      "rating": null,
+      "id": 42
     }
   ]
 }
