@@ -5,7 +5,7 @@ import "./Whiskey.css";
 
 export const ToTry = ({ userWhiskey }) => {
   return (
-    <Card style={{ border: 'none', width: '60%'}}>
+    <Card style={{ border: 'none', width: '40%'}}>
     <div className="userWhiskeys whiskey__margin">
     <Card.Title>
       <h3 className="whiskey__name">

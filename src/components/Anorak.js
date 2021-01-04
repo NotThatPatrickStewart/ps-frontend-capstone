@@ -21,9 +21,7 @@ export const Anorak = () => (
                         <Route render={props => <NavBar {...props} /> } />
                         </div>
                         <div className="main__container">
-                        <Container>
                         <Route render={props => <ApplicationViews {...props} /> } />
-                        </Container>
                         </div>
                     </>
                 )

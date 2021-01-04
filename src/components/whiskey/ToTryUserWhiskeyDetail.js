@@ -39,6 +39,7 @@ export const ToTryUserWhiskeyDetail = (props) => {
         <h3 className="userWhiskey__name">{userWhiskey.title}</h3>
         <img className="userWhiskey__image" src={userWhiskey.list_img_url} alt="whiskey bottle" />
         </div>
+        <div className="whiskeyDetailRight">
         <div className="whiskeyData">
         <div className="userWhiskey__region">TYPE: {whiskey.region}</div>
         <div className="userWhiskey__region">${whiskey.price}</div>
@@ -46,13 +47,13 @@ export const ToTryUserWhiskeyDetail = (props) => {
         {/* <div className="userWhiskey__tags">{userWhiskey.tags.title}</div> */}
         </div>
         <div className="buttonParentDiv">
-        <Button variant="dark" onClick={
+        <Button variant="dark" className="button" onClick={
             () => {
                 props.history.push(`/to-try-userWhiskeys/edit/${userWhiskey.id}`)
             }}>
                 ADD RATING
             </Button>
-            <Button variant="dark" onClick={
+            <Button variant="dark" className="button" onClick={
                     () => {
                       deleteWhiskey(userWhiskey.id)
                         .then(() => {
@@ -60,7 +61,8 @@ export const ToTryUserWhiskeyDetail = (props) => {
                         })
                     }
                 }>REMOVE WHISKEY</Button>
-            <Button variant="dark" onClick={() => history.goBack()}>BACK</Button>
+            <Button variant="dark" className="button" onClick={() => history.goBack()}>BACK</Button>
+            </div>
             </div>
       </section>
     </>
