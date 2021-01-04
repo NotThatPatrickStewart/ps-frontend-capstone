@@ -1,8 +1,8 @@
 import React, { useContext, useRef } from "react";
 import { WhiskeyContext } from "./WhiskeyProvider";
-import "./Whiskey.css";
 import { useHistory } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
+import "./Whiskey.css";
 
 export const HaveTriedUserWhiskeyForm = (props) => {
   const { updateUserWhiskey } = useContext(WhiskeyContext);

@@ -5,6 +5,7 @@ import { Anorak } from './components/Anorak';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./components/whiskey/Whiskey.css";
 
 ReactDOM.render(
   <React.StrictMode>

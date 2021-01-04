@@ -1,10 +1,14 @@
 import React from 'react'
 import { Route, Redirect } from 'react-router-dom'
-import './Anorak.css'
 import { ApplicationViews } from './ApplicationView'
 import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
 import { NavBar } from './nav/NavBar'
+import { Container } from 'react-bootstrap';
+import './Anorak.css'
+import "./whiskey/Whiskey.css";
+
+
 
 export const Anorak = () => (
     <>
@@ -13,8 +17,14 @@ export const Anorak = () => (
             if (localStorage.getItem("app_user_id")) {
                 return (
                     <>
+                        <div className="nav__container">
                         <Route render={props => <NavBar {...props} /> } />
+                        </div>
+                        <div className="main__container">
+                        <Container>
                         <Route render={props => <ApplicationViews {...props} /> } />
+                        </Container>
+                        </div>
                     </>
                 )
             } else {

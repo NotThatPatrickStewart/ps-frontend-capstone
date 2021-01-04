@@ -2,6 +2,8 @@ import React, { useContext, useEffect, useState } from "react";
 import { WhiskeyContext } from "./WhiskeyProvider";
 import { useHistory } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
+import "./Whiskey.css";
+
 
 export const ToTryUserWhiskeyDetail = (props) => {
   const { getUserWhiskeyById, deleteWhiskey, getWhiskeyById } = useContext(WhiskeyContext);

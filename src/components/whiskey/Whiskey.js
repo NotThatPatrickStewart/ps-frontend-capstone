@@ -1,6 +1,6 @@
 import React from "react";
-import "./Whiskey.css";
 import { Comparable } from "./Comparable";
+import "./Whiskey.css";
 
 export const Whiskey = ({ whiskey }) => (
   <section className="whiskey">

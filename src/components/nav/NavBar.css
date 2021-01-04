@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+
+body,
+button,
+input,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Patua One", serif;
+  letter-spacing: 2px;
+}
+
+.navbar {
+    height: 25em;
+    background-image: url(../../images/banner.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-bottom: 4%;
+}
+
+.navbar__link {
+    color: whitesmoke;
+    font-size: 250%;
+    font-weight: 2;
+    
+}
+
+.navbar__link:hover {
+    color: darkgray;
+    text-decoration: none;
+}
+
+.navbar__item {
+    justify-content: space-evenly;
+    width: 33%;
+    text-align: center;
+}

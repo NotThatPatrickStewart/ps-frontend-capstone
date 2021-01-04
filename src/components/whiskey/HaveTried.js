@@ -1,12 +1,12 @@
 import React from "react";
-import "./Whiskey.css";
 import { Link } from "react-router-dom"
 import Card from 'react-bootstrap/Card';
+import "./Whiskey.css";
 
 export const HaveTried = ({ userWhiskey }) => {
   return (
-    <Card>
-    <div className="userWhiskeys">
+    <Card style={{ border: 'none', width: '60%'}}>
+    <div className="userWhiskeys whiskey__margin">
       <Card.Title>
       <h3 className="whiskey__name">
         <Link to={`/have-tried-userWhiskeys/${userWhiskey.id}`}>{userWhiskey.title}</Link>
