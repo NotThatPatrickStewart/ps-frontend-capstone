@@ -7,13 +7,15 @@ export const WhiskeySearch = (props) => {
 
     return (
         <>
-            SEARCH:
+            <div className="search__bar">
+            SEARCH:  
             <input type="text"
             className="input--wide"
             onKeyUp={
                 (keyEvent) => setSearchTerms(keyEvent.target.value)
             }
             placeholder="ENTER A WHISKEY YOU LIKE" />
+            </div>
         </>
     )
 }

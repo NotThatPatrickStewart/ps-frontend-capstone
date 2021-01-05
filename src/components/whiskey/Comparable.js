@@ -29,12 +29,16 @@ export const Comparable = ({comparable}) => {
       <img className="whiskey__image" src={comparable.list_img_url} alt="whiskey bottle" />
       </div>
       <div className="whiskeyData">
+      <div className="whiskeyDataComparable">
       <div className="whiskey__region">TYPE: {comparable.region}</div>
     <div className="whiskey__price">${comparable.price}</div>
     {/* <div className="whiskey__tags">{comparable.tags.title}</div> */}
     </div>
+    </div>
     <div className="buttonParentDiv">
-      <Button variant="dark" onClick = {addWhiskeyToTry} > ADD TO TRY LIST</Button>
+    <div className="buttonParentDivComparable">
+      <Button variant="dark" className="button" onClick = {addWhiskeyToTry} > ADD TO TRY LIST</Button>
+    </div>
     </div>
     </div>
   );

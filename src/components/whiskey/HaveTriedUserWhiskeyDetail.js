@@ -44,7 +44,7 @@ export const HaveTriedUserWhiskeyDetail = (props) => {
         <div className="whiskeyData">
         <div className="whiskey__rating">RATING: {userWhiskey.rating}</div>
         <div className="whiskey__region">TYPE: {whiskey.region}</div>
-        <div className="whiskey__region">${whiskey.price}</div>
+        <div className="whiskey__region">RETAIL: ${whiskey.price}</div>
         <div className="userWhiskey__notes">NOTES: {userWhiskey.notes}</div>
         {/* <div className="userWhiskey__tags">{userWhiskey.tags.title}</div> */}
         </div>

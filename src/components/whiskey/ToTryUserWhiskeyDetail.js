@@ -42,7 +42,7 @@ export const ToTryUserWhiskeyDetail = (props) => {
         <div className="whiskeyDetailRight">
         <div className="whiskeyData">
         <div className="userWhiskey__region">TYPE: {whiskey.region}</div>
-        <div className="userWhiskey__region">${whiskey.price}</div>
+        <div className="userWhiskey__region">RETAIL: ${whiskey.price}</div>
         <div className="userWhiskey__notes">NOTES: {userWhiskey.notes}</div>
         {/* <div className="userWhiskey__tags">{userWhiskey.tags.title}</div> */}
         </div>

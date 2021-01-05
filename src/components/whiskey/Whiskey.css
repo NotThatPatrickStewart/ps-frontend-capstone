@@ -1,8 +1,4 @@
 
-.whiskey__name, .userWhiskey__name {
-    color: #6C6C6C;
-  }
-
 
 .whiskey__image {
       border-radius: 10px;
@@ -15,11 +11,42 @@
   }
 
   .whiskeyHeaderSearch, .whiskeyHeader {
-      margin-left: 5%;
+      margin-left: 10%;
   }
+
+  .whiskey {
+      width: 40%;
+  }
+
+  .comparable__card, .whiskey__card {
+      margin-top: 5%;
+      margin-bottom: 5%;
+  }
+
+  .search__title1 {
+    margin-top: 10%;
+  }
+
+    .search__title2 {
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+.whiskeyDataComparable {
+    margin-left: 10%;
+}
+
+.buttonParentDivComparable {
+    margin-left: 20%;
+    margin-bottom: 15%;
+    margin-top: 0;
+    width: 200%;
+    border-bottom: solid 3px black;
+}
 
   a {
       text-decoration: none;
+      color: darkgray;
   }
 
   a:hover {
@@ -29,6 +56,17 @@
   .whiskeys {
       display: flex;
       flex-direction: row;
+      margin-bottom: 5%;
+  }
+
+  .whiskeyData {
+      font-size: 150%;
+      margin-bottom: 10%;
+  }
+
+  .whiskeyDataSearch {
+      font-size: 150%;
+      margin-bottom: 10%;
   }
 
   .list {
@@ -47,13 +85,19 @@
   }
 
   .input--wide {
-      width: 25%;
-      margin-left: 10%;
+      width: 35%;
+      margin-left: 1%;
+  }
+
+  .search__bar {
+    margin-left: 10%;
+    font-size: 150%;
   }
 
   .userWhiskeyDetail {
       display: flex;
       justify-content: center;
+      margin-bottom: 5%;
   }
 
   .whiskeyDetailRight {

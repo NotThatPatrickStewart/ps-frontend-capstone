@@ -18,7 +18,7 @@ export const HaveTriedList = (props) => {
       <>
       <div className="listElements">
       <div className="whiskeyHeader">
-        <h1>WHISKEYS I'VE TRIED</h1>
+        <h1>WHISKEYS I HAVE TRIED</h1>
         <h4>click on a whiskey to see more info</h4>
         </div>
         <div className="list">

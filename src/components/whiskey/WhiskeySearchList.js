@@ -24,12 +24,12 @@ export const WhiskeySearchList = (props) => {
   }, [searchTerms, whiskeys]);
 
   return (
-    <div className="whiskeys whiskey__margin">
+    // <div className="whiskeys whiskey__margin">
       <>
       <div className="listElements">
       <div className="whiskeyHeader">
         <h1>WHISKEYS</h1>
-        <h4>enter a whiskey you like above to see some other whiskey's with similar flavor profiles <br /> once you find one you like, click the button to add it to your 'to try' list</h4>
+        <h4>enter a whiskey you like above to see other whiskeys with a similar flavor profile <br /> once you find one you like, click the button to add it to your 'to try' list</h4>
         </div>
         <div className="list">
         {filteredWhiskeys.map((whiskey) => {
@@ -38,7 +38,7 @@ export const WhiskeySearchList = (props) => {
         </div>
         </div>
       </>
-    </div>
+    // </div>
   );
 };
 

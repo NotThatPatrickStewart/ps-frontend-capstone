@@ -7,6 +7,12 @@ import "./NavBar.css"
 export const NavBar = (props) => {
     return (
         <div className="navbar">
+            <h1 className="navbar__title">
+                ANORAK
+            </h1>
+            <p className="navbar__subtitle">
+                FOR FANS OF THE UNUSUAL
+            </p>
             <p className="navbar__item active">
                 <Link className="navbar__link" to="/">SEARCH</Link>
             </p>
