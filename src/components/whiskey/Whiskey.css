@@ -1,4 +1,6 @@
-
+.whiskey__name {
+    color: #6C6C6C;
+}
 
 .whiskey__image {
       border-radius: 10px;
@@ -23,6 +25,16 @@
       margin-bottom: 5%;
   }
 
+  .addNote {
+    margin-left: 10%;
+    font-size: 150%;
+    width: 60%;
+  }
+
+  .form-rating {
+      margin-top: 5%;
+  }
+
   .search__title1 {
     margin-top: 10%;
   }
@@ -34,6 +46,8 @@
 
 .whiskeyDataComparable {
     margin-left: 10%;
+    color: #6C6C6C;
+
 }
 
 .buttonParentDivComparable {
@@ -62,6 +76,8 @@
   .whiskeyData {
       font-size: 150%;
       margin-bottom: 10%;
+      color: #6C6C6C;
+
   }
 
   .whiskeyDataSearch {

@@ -28,7 +28,7 @@ export const WhiskeySearchList = (props) => {
       <>
       <div className="listElements">
       <div className="whiskeyHeader">
-        <h1>WHISKEYS</h1>
+        <h1>FIND YOUR NEW FAVORITE WHISKEY</h1>
         <h4>enter a whiskey you like above to see other whiskeys with a similar flavor profile <br /> once you find one you like, click the button to add it to your 'to try' list</h4>
         </div>
         <div className="list">

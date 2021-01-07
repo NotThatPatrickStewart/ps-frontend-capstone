@@ -51,7 +51,7 @@ export const ToTryUserWhiskeyForm = (props) => {
         </div>
       </fieldset>
       <div className="buttonDiv">
-      <Button variant="dark"
+      <Button variant="dark" className="button"
         type="submit"
         onClick={(evt) => {
           evt.preventDefault(); // Prevent browser from submitting the form
@@ -61,7 +61,7 @@ export const ToTryUserWhiskeyForm = (props) => {
       >
         SAVE
       </Button>
-      <Button variant="dark" onClick={() => history.goBack()}>BACK</Button>
+      <Button variant="dark" className="button" onClick={() => history.goBack()}>BACK</Button>
       </div>
     </form>
   );
