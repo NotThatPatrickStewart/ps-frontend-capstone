@@ -27,9 +27,7 @@ export const NavBar = (props) => {
             <p className="navbar__item">
                 <Link className="navbar__link" to="/have-tried">HAVE TRIED</Link>
             </p>
-            <p className="navbar__item logout">
-                    {localStorage.getItem("app_user") ? <Link className="navbar__link" to="/login" onClick={()=>{clearLocalStorage()}}>logout</Link>:<Link className="navbar__link" to="/login">login</Link> }
-            </p>
+                   <div className="logout"> {localStorage.getItem("app_user") ? <Link className="navbar__link" to="/login" onClick={()=>{clearLocalStorage()}}>logout</Link>:<Link className="navbar__link" to="/login">login</Link> } </div>
             </div>
         </div>
     )
