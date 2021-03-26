@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import { WhiskeyContext } from "./WhiskeyProvider";
 import { useHistory } from "react-router-dom";
+import { Button } from "react-bootstrap";
+import "./Whiskey.css";
 
 export const HaveTriedUserWhiskeyDetail = (props) => {
   const { getUserWhiskeyById, deleteWhiskey, getWhiskeyById } = useContext(WhiskeyContext);
@@ -17,17 +19,13 @@ export const HaveTriedUserWhiskeyDetail = (props) => {
 
   useEffect(() => {
     if (userWhiskey.id !== undefined) { 
-    const whiskeyId = parseInt(userWhiskey.whiskeyId);
+    const whiskeyId = parseInt(userWhiskey.whiskey_id);
     getWhiskeyById(whiskeyId)
     .then(w => {
-    //  console.log("w", w) 
      setWhiskey(w)
     }
     )};
   }, [userWhiskey]);
-
-// console.log("userWhiskey", userWhiskey)
-//  console.log("whiskey", whiskey)
 
   return (
     <>
@@ -36,29 +34,30 @@ export const HaveTriedUserWhiskeyDetail = (props) => {
         <h3 className="userWhiskey__name">{userWhiskey.title}</h3>
         <img className="userWhiskey__image" src={userWhiskey.list_img_url} alt="whiskey bottle" />
         </div>
+        <div className="whiskeyDetailRight">
         <div className="whiskeyData">
         <div className="whiskey__rating">RATING: {userWhiskey.rating}</div>
         <div className="whiskey__region">TYPE: {whiskey.region}</div>
-        <div className="whiskey__region">${whiskey.price}</div>
+        <div className="whiskey__region">RETAIL: ${whiskey.price}</div>
         <div className="userWhiskey__notes">NOTES: {userWhiskey.notes}</div>
-        {/* <div className="userWhiskey__tags">{userWhiskey.tags.title}</div> */}
         </div>
         <div className="buttonParentDiv">
-        <button onClick={
+        <Button variant="dark" className="button" onClick={
             () => {
                 props.history.push(`/have-tried-userWhiskeys/edit/${userWhiskey.id}`)
             }}>
                 EDIT NOTE
-            </button>
-            <button onClick={
+            </Button>
+            <Button variant="dark" className="button" onClick={
                     () => {
                       deleteWhiskey(userWhiskey.id)
                         .then(() => {
                             props.history.push("/have-tried")
                         })
                     }
-                }>REMOVE WHISKEY</button>
-            <button onClick={() => history.goBack()}>BACK</button>
+                }>REMOVE WHISKEY</Button>
+            <Button variant="dark" className="button" onClick={() => history.goBack()}>BACK</Button>
+            </div>
             </div>
       </section>
     </>
