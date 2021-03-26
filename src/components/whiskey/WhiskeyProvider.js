@@ -8,42 +8,74 @@ export const WhiskeyProvider = (props) => {
   const [userWhiskeys, setUserWhiskeys] = useState([])
 
   const getWhiskeys = () => {
-    return fetch("http://localhost:8089/whiskeys")
+    return fetch("http://localhost:8000/whiskeys", {
+      headers:{
+        "Content-Type": "application/json",
+        "Authorization": `Token ${localStorage.getItem("app_user")}`
+    },
+    })
       .then((response) => response.json())
       .then(setWhiskeys);
   };
   
   const getWhiskeyById = (id) => {
-    return fetch(`http://localhost:8089/whiskeys/${id}`)
+    return fetch(`http://localhost:8000/whiskeys/${id}`, {
+      headers:{
+        "Content-Type": "application/json",
+        "Authorization": `Token ${localStorage.getItem("app_user")}`
+    },
+    })
     .then((response) => response.json())
+  }
+  
+  const getWhiskeyBySearch = (title) => {
+    return fetch(`http://localhost:8000/whiskeys?searchterm=${title}`, {
+      headers:{
+        "Content-Type": "application/json",
+        "Authorization": `Token ${localStorage.getItem("app_user")}`
+    },
+    })
+    .then((response) => response.json())
+    .then(setWhiskeys);
   }
 
   const getUserWhiskeyById = (id) => {
-    return fetch(`http://localhost:8088/userWhiskeys/${id}`)
+    return fetch(`http://localhost:8000/userwhiskeys/${id}`, {
+      headers:{
+        "Content-Type": "application/json",
+        "Authorization": `Token ${localStorage.getItem("app_user")}`
+    },
+    })
     .then((response) => response.json())
   }
 
   const addUserWhiskey = (whiskey) => {
-    return fetch("http://localhost:8088/userWhiskeys", {
+    return fetch("http://localhost:8000/userwhiskeys", {
       method: "POST",
-      headers: {
+      headers:{
         "Content-Type": "application/json",
-      },
+        "Authorization": `Token ${localStorage.getItem("app_user")}`
+    },
       body: JSON.stringify(whiskey),
     }).then(getWhiskeys);
   };
 
   const getUserWhiskeys = () => {
-    return fetch("http://localhost:8088/userWhiskeys")
+    return fetch("http://localhost:8000/userwhiskeys", {
+      headers:{
+        "Content-Type": "application/json",
+        "Authorization": `Token ${localStorage.getItem("app_user")}`
+    },
+    })
     .then((response) => response.json())
       .then(setUserWhiskeys);
   }
-
   const updateUserWhiskey = (whiskeyId, updateWhiskey) => {
-    return fetch (`http://localhost:8088/userWhiskeys/${whiskeyId}`, {
+    return fetch (`http://localhost:8000/userwhiskeys/${whiskeyId}`, {
       method: "PATCH",
       headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
+          "Authorization": `Token ${localStorage.getItem("app_user")}`
       },
       body: JSON.stringify(updateWhiskey)
     })
@@ -51,8 +83,12 @@ export const WhiskeyProvider = (props) => {
   }
 
   const deleteWhiskey = whiskeyId => {
-    return fetch(`http://localhost:8088/userWhiskeys/${whiskeyId}`, {
-        method: "DELETE"
+    return fetch(`http://localhost:8000/userwhiskeys/${whiskeyId}`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Token ${localStorage.getItem("app_user")}`
+      }
     })
         .then(getUserWhiskeys)
 }
@@ -70,7 +106,8 @@ export const WhiskeyProvider = (props) => {
         getUserWhiskeyById,
         updateUserWhiskey,
         deleteWhiskey,
-        getWhiskeyById
+        getWhiskeyById,
+        getWhiskeyBySearch
       }}
     >
       {props.children}
