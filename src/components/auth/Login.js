@@ -41,12 +41,12 @@ export const Login = () => {
           Close
         </button>
       </dialog>
-      <section>
+      <section className="sectionDiv">
         <form className="form--login" onSubmit={handleLogin}>
           <h1>Anorak</h1>
-          <h2>Please sign in</h2>
+          <h2>Please Sign In</h2>
           <fieldset>
-            <label htmlFor="inputEmail"> Email address </label>
+            <label className="loginText" htmlFor="inputEmail"> Email Address </label>
             <input
               ref={email}
               type="email"
@@ -59,7 +59,7 @@ export const Login = () => {
             />
           </fieldset>
           <fieldset>
-            <label htmlFor="inputPassword"> Password </label>
+            <label className="loginText" htmlFor="inputPassword"> Password </label>
             <input
               ref={password}
               type="password"
@@ -70,15 +70,13 @@ export const Login = () => {
               required
             />
           </fieldset>
-          <fieldset
-            style={{
-              textAlign: "center",
-            }}
-          >
-            <button className="btn btn-1 btn-sep icon-send" type="submit">
-              Sign In
-            </button>
-          </fieldset>
+          <fieldset className="signInButton">
+                        <div className="submitButton">
+                        <button type="submit">
+                            Sign in
+                        </button>
+                        </div>
+                    </fieldset>
         </form>
       </section>
       <section className="link--register">
