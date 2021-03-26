@@ -43,7 +43,7 @@ export const Login = () => {
       </dialog>
       <section>
         <form className="form--login" onSubmit={handleLogin}>
-          <h1>The Hope App</h1>
+          <h1>Anorak</h1>
           <h2>Please sign in</h2>
           <fieldset>
             <label htmlFor="inputEmail"> Email address </label>
