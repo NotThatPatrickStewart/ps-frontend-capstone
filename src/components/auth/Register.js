@@ -42,18 +42,19 @@ export const Register = () => {
                 <div>Passwords do not match</div>
                 <button className="button--close" onClick={e => passwordDialog.current.close()}>Close</button>
             </dialog>
+            <section className="sectionDiv">
             <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Register an account</h1>
+                <h1 className="h3 mb-3 font-weight-normal">Register an Account</h1>
                 <fieldset>
-                    <label htmlFor="inputEmail"> Email address </label>
+                    <label className="loginText" htmlFor="inputEmail"> Email Address </label>
                     <input ref={email} type="email" name="email" className="form-control" placeholder="Email address" required />
                 </fieldset>
                 <fieldset>
-                    <label htmlFor="inputPassword"> Password </label>
+                    <label className="loginText" htmlFor="inputPassword"> Password </label>
                     <input ref={password} type="password" name="password" className="form-control" placeholder="Password" required />
                 </fieldset>
                 <fieldset>
-                    <label htmlFor="verifyPassword"> Verify Password </label>
+                    <label className="loginText" htmlFor="verifyPassword"> Verify Password </label>
                     <input ref={verifyPassword} type="password" name="verifyPassword" className="form-control" placeholder="Verify password" required />
                 </fieldset>
                 <fieldset style={{
@@ -62,8 +63,9 @@ export const Register = () => {
                     <button className="btn btn-1 btn-sep icon-send" type="submit">Register</button>
                 </fieldset>
             </form>
+            </section>
             <section className="link--register">
-                Already registered? <Link to="/login">Login</Link>
+                <Link to="/login">Already registered?</Link>
             </section>
         </main>
     )
