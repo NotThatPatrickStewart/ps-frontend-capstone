@@ -73,4 +73,8 @@ h6 {
 
 .logout {
     font-size: 60%;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    
 }
