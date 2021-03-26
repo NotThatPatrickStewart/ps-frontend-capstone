@@ -1,40 +1,160 @@
-.whiskey {
-  flex-basis: 28%;
-  margin: 5px;
-  padding: 5px;
-  border: 1px solid goldenrod;
+.whiskey__name {
+    color: #6C6C6C;
 }
 
-.comparable, .whiskeys, .userWhiskeyDetail {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-border: 1px solid goldenrod;
+.whiskey__image {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%
+  }
+
+  .userWhiskey__image {
+      width: 80%;
+  }
+
+  .whiskeyHeaderSearch, .whiskeyHeader {
+      margin-left: 10%;
+  }
+
+  .whiskey {
+      width: 40%;
+      /* display: flex;
+      justify-content: space-evenly; */
+  }
+
+  .comparable__card, .whiskey__card {
+      margin-top: 5%;
+      margin-bottom: 5%;
+  }
+
+  .addNote {
+    margin-left: 10%;
+    font-size: 150%;
+    width: 60%;
+  }
+
+  .form-rating {
+      margin-top: 5%;
+  }
+
+  .search__title1 {
+    margin-top: 10%;
+  }
+
+    .search__title2 {
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+.whiskeyDataComparable {
+    margin-left: 10%;
+    color: #6C6C6C;
+
 }
 
-.whiskey__image, .userWhiskey__image {
-  width: 200px;
-  height: 200px;
-  object-fit: scale-down;
+.buttonParentDivComparable {
+    margin-left: 20%;
+    margin-bottom: 15%;
+    margin-top: 0;
+    width: 200%;
+    /* border-bottom: solid 3px black; */
 }
 
-.buttonDiv {
-display: flex;
-}
+  a {
+      text-decoration: none;
+      color: darkgray;
+  }
 
-.buttonParentDiv, .whiskeyHeader, .whiskeyData, .listElemets {
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-}
+  a:hover {
+    text-decoration: none;
+  }
 
-.notes {
-width: 30%;
-}
+  .whiskeys {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 5%;
+  }
 
-.userWhiskeys {
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-border: 1px solid goldenrod;
-}
+  .whiskeyData {
+      font-size: 150%;
+      margin-bottom: 10%;
+      color: #6C6C6C;
+
+  }
+
+  .whiskeyDataSearch {
+      font-size: 150%;
+      margin-bottom: 25%;
+  }
+
+  .list {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      flex-direction: row;
+  }
+
+  .whiskey__margin {
+      margin: 10%;
+  }
+
+  .card {
+      background-color: rgba(0, 0, 0, 0) !important;
+  }
+
+  .input--wide {
+      width: 150%;
+      margin-left: 1%;
+      height: 30px;
+  }
+
+  .search__bar {
+    margin-left: 10%;
+    font-size: 150%;
+  }
+
+  .search__instructions {
+      width: 150%;
+      line-height: 25px;
+      margin-top: 0 !important;
+  }
+
+  .whiskeyHeader {
+      margin-bottom: 0 !important;
+  }
+
+  .userWhiskeyDetail {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5%;
+  }
+
+  .whiskeyDetailRight {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .button {
+      margin: 2%;
+  }
+    
+    .buttonParentDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 250px;
+    }
+
+  * {
+    -webkit-box-sizing: content-box !important;
+       -moz-box-sizing: content-box !important;
+            box-sizing: content-box !important;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: content-box !important;
+       -moz-box-sizing: content-box !important;
+            box-sizing: content-box !important;
+  }
+
