@@ -3,8 +3,6 @@ import { Link, useHistory } from "react-router-dom"
 import "./Login.css";
 
 export const Register = () => {
-    const firstName = useRef()
-    const lastName = useRef()
     const email = useRef()
     const password = useRef()
     const verifyPassword = useRef()
@@ -12,8 +10,6 @@ export const Register = () => {
     const history = useHistory()
     const handleRegister = (e) => {
         e.preventDefault()
-        // let createdOn = ""
-        // createdOn = new Date()
         if (password.current.value === verifyPassword.current.value) {
             const newUser = {
                 "username": email.current.value,
