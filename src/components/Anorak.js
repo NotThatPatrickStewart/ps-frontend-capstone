@@ -9,8 +9,8 @@ import { NavBar } from './nav/NavBar'
 export const Anorak = () => (
     <>
         <Route render={() => {
-          // The user id is saved under the key app_user_id in local Storage. Change below if needed!
-            if (localStorage.getItem("app_user_id")) {
+          // The user id is saved under the key app_user in local Storage. Change below if needed!
+            if (localStorage.getItem("app_user")) {
                 return (
                     <>
                         <Route render={props => <NavBar {...props} /> } />
