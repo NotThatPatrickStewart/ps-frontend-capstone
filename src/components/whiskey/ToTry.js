@@ -13,7 +13,7 @@ export const ToTry = ({ userWhiskey }) => {
       </h3>
       </Card.Title>
       <Link to={`/to-try-userWhiskeys/${userWhiskey.id}`}><img className="whiskey__image" src={userWhiskey.list_img_url} alt="whiskey bottle" /></Link>
-      <div className="whiskey>>rating">{userWhiskey.rating}</div>
+      <div className="whiskey__rating">{userWhiskey.rating}</div>
     </div>
     </Card>
   );
