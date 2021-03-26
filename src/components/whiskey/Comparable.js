@@ -17,7 +17,7 @@ export const Comparable = ({comparable}) => {
             rating: null
         }
 
-        addUserWhiskey(newWhiskeyToTry)
+        addUserWhiskey(newWhiskeyToTry).then(()=> window.alert("Your Whiskey Has Been Added!"))
     }
 
     return (
@@ -36,7 +36,7 @@ export const Comparable = ({comparable}) => {
       </div>
       <div className="buttonParentDiv">
       <div className="buttonParentDivComparable">
-        <Button variant="dark" className="button" onClick = {addWhiskeyToTry} > ADD TO TRY LIST</Button>
+        <Button variant="dark" className="button" onClick ={addWhiskeyToTry}> ADD TO TRY LIST</Button>
       </div>
       </div>
       </div>
