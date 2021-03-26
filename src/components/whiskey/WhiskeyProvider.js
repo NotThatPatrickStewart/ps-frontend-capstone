@@ -57,7 +57,7 @@ export const WhiskeyProvider = (props) => {
         "Authorization": `Token ${localStorage.getItem("app_user")}`
     },
       body: JSON.stringify(whiskey),
-    }).then(getWhiskeys);
+    });
   };
 
   const getUserWhiskeys = () => {
