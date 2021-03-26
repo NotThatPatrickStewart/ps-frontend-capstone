@@ -37,3 +37,22 @@ strong {
 address {
   margin: 0 0 1.5em;
 }
+
+/* .main__container {
+display: flex;
+background-color: #524948;
+} */
+
+
+* {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
