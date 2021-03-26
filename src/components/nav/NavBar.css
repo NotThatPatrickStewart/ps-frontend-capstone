@@ -1,10 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+/* @import url('https://fonts.googleapis.com/css2?family=Texturina:wght@600&display=swap'); */
+
+body,
+button,
+input,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Patua One", serif !important;
+  /* font-family: 'Texturina', serif !important; */
+  letter-spacing: 2px;
+}
+
+
+
 .navbar {
+    height: 25em;
+    background-image: url(../../images/banner.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+    margin-bottom: 4%;
+    flex-direction: column;
+}
+
+.navbar__links {
+    display: flex;
+}
+
+.navbar__link {
+    color: whitesmoke;
+    font-size: 250%;
+    font-weight: 2;
+}
+
+.navbar__link:hover {
+    color: darkgray;
+    text-decoration: none;
 }
 
 .navbar__item {
-    flex-basis: 20%;
-    list-style-type: none;
+    justify-content: space-evenly;
+    width: 33%;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.navbar__title{
+    color: whitesmoke;
+    font-size: 750%;
+    font-weight: 2;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: -20px;
+}
+
+.navbar__subtitle{
+    color: whitesmoke;
+    font-size: 300%;
+    font-weight: 2;
+    text-align: center;
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: 5%;
+}
+
+.logout {
+    font-size: 60%;
 }
