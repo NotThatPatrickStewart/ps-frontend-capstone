@@ -13,7 +13,7 @@ npm install
 npm start
 ```
 The final command will run the app at localhost:3000.
-Follow instructions [here](https://github.com/NotThatPatrickStewart/ps-frontend-capstone) for running the server at localhost:8000.
+Follow instructions [here](https://github.com/NotThatPatrickStewart/anorak-server) for running the server at localhost:8000.
 
 ## Using the app
 
