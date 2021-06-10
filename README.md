@@ -1,7 +1,7 @@
 # Anorak - Client
 
 ## Description
-Anorak is an app designed for whiskey drinkers who want to expand their tastes by finding whiskeys with a similar flavor profile to bottles they already konw they like.
+Anorak is an app designed for whiskey drinkers who want to expand their tastes by finding whiskeys with a similar flavor profile to bottles they already know they like.
 
 ## Installations
 Run the following commands in the terminal
